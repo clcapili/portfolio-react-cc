@@ -1,4 +1,13 @@
+import { useEffect } from 'react'
+
 export default function Projects() {
+  useEffect(() => {
+    document.body.classList.add('projects-layout')
+    return () => {
+      document.body.classList.remove('projects-layout')
+    }
+  }, [])
+
   return (
     <div className='pages projects'>
       <section className='hero-text'>

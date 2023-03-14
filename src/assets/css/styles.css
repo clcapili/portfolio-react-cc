@@ -351,6 +351,31 @@ footer h6 {
 }
 
 /* projects */
+body.projects-layout {
+  background-color: #000;
+  color: #fff;
+}
+
+body.projects-layout header .header-desktop {
+  border-bottom: 1px solid #fff;
+}
+
+body.projects-layout header .header-desktop nav a.active {
+  color: #B9FF1F;
+}
+
+body.projects-layout a {
+  color: #fff;
+}
+
+body.projects-layout img {
+  filter: grayscale(1) invert(1);
+}
+
+body.projects-layout footer {
+  border-top: 1px solid #fff;
+}
+
 .projects h3 {
   font-family: 'AvenirLtStdMedium', Arial, sans-serif;
 }
