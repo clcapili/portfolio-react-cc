@@ -3,7 +3,7 @@ body { font-family: 'AvenirLtStdLight', Arial, sans-serif; }
 h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
 /* fluid typography */
-h1 { font-size: clamp(4rem, 1.458rem + 7.0611vw, 7.813rem); }   /* 4rem | 7.813rem */
+h1 { font-size: 4rem; letter-spacing: 1px; }
 h2 { font-size: clamp(3rem, 0.8333rem + 6.0185vw, 6.25rem); }   /* 3rem | 6.25rem */
 h3 { font-size: clamp(2.5rem, 0.5rem + 5.5556vw, 5.5rem); }     /* 2.5rem | 5.5rem */
 h4 { font-size: clamp(2rem, 0.208rem + 4.9778vw, 4.688rem); }   /* 2rem | 4.688rem */
@@ -398,6 +398,10 @@ footer h6 {
 
 /* desktop */
 @media (min-width: 576px) {
+  h1 {
+    font-size: clamp(3.5rem, 0.6247rem + 7.987vw, 7.813rem);
+  }  /* 4.5rem | 7.813rem */
+
   .container { max-width: 540px; }
 
   .bottom-link {
@@ -411,6 +415,10 @@ footer h6 {
 }
 
 @media (min-width: 768px) {
+  h1 {
+    letter-spacing: -4px;
+  }
+
   .container { max-width: 720px; }
   .col-md-7 { flex: 0 0 auto; width: 58.33333333%; }
   .col-md-5 { flex: 0 0 auto; width: 41.66666667%; }
