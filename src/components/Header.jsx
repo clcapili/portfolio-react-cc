@@ -97,7 +97,7 @@ export default function Header() {
             </li>
             <li>
               <NavLink
-                to='/'
+                to='/about'
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -108,7 +108,7 @@ export default function Header() {
             </li>
             <li>
               <NavLink
-                to='/'
+                to='/projects'
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -119,7 +119,7 @@ export default function Header() {
             </li>
             <li>
               <NavLink
-                to='/'
+                to='/contact'
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
