@@ -1,13 +1,13 @@
 export default function About() {
   return (
-    <section className='pages about'>
-      <div className='hero-text'>
+    <div className='pages about'>
+      <section className='hero-text'>
         <div className='container'>
           <h4>I'm a Toronto based Web Developer and Interactive Designer <span>with 6+ years of experience in developing solid, scalable digital products with excellent user experiences.</span></h4>
         </div>
-      </div>
+      </section>
         
-      <div className='container'>
+      <section className='container'>
         <div className='row'>
           <div className='col-md-5'>
             <div className='skillset'>
@@ -41,7 +41,7 @@ export default function About() {
             <h1>digital tools.</h1>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

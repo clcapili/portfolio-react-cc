@@ -12,9 +12,9 @@ import iconLong from './../assets/img/icon-arrow-long-right.svg';
 
 export default function Home() {
   return (
-    <section className='pages home'>
+    <div className='pages home'>
       <div className='container'>
-        <div className='hero-column'>
+        <section className='hero-column'>
           <div className='row'>
             <div className='col-md-7'>
               <h2>I design &amp; <span>build products.</span></h2>
@@ -25,9 +25,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className='row featured-projects'>
+        <section className='row featured-projects'>
           <div className='col-md-5'>
             <div className='featured-project'>
               <Link to='/'>
@@ -65,9 +65,9 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className='row'>
+        <section className='row'>
           <div className='col-md-7'>
             <div className='featured-project'>
               <Link to='/'>
@@ -105,15 +105,15 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className='row'>
+        <section className='row'>
           <Link to='/projects' className='bottom-link'>
             <h2>View All Projects</h2>
             <img src={iconLong} alt='Icon arrow long right for next page links' />
           </Link>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
   );
 }
