@@ -1,0 +1,50 @@
+/* Avenir Lt Std */
+@font-face {
+    font-family: 'AvenirLtStdLight';
+    src: url('/src/assets/fonts/AvenirLTStd-Light.otf') format('embedded-opentype'),
+         url('/src/assets/fonts/AvenirLTStd-Light.woff2') format('woff2'),
+         url('/src/assets/fonts/AvenirLTStd-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AvenirLtStdMedium';
+    src: url('/src/assets/fonts/AvenirLTStd-Medium.otf') format('embedded-opentype'),
+         url('/src/assets/fonts/AvenirLTStd-Medium.woff2') format('woff2'),
+         url('/src/assets/fonts/AvenirLTStd-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AvenirLtStdBlack';
+    src: url('/src/assets/fonts/AvenirLTStd-Black.otf') format('embedded-opentype'),
+         url('/src/assets/fonts/AvenirLTStd-Black.woff2') format('woff2'),
+         url('/src/assets/fonts/AvenirLTStd-Black.woff') format('woff');
+}
+
+/* Rajdhani */
+@font-face {
+    font-family: 'RajdhaniRegular';
+    src: url('/src/assets/fonts/Rajdhani-Regular.ttf') format('truetype'),
+         url('/src/assets/fonts/Rajdhani-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/Rajdhani-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'RajdhaniMedium';
+    src: url('/src/assets/fonts/Rajdhani-Medium.ttf') format('truetype'),
+         url('/src/assets/fonts/Rajdhani-Medium.woff2') format('woff2'),
+         url('/src/assets/fonts/Rajdhani-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'RajdhaniSemibold';
+    src: url('/src/assets/fonts/Rajdhani-Semibold.ttf') format('truetype'),
+         url('/src/assets/fonts/Rajdhani-Semibold.woff2') format('woff2'),
+         url('/src/assets/fonts/Rajdhani-Semibold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'RajdhaniBold';
+    src: url('/src/assets/fonts/Rajdhani-Bold.ttf') format('truetype'),
+         url('/src/assets/fonts/Rajdhani-Bold.woff2') format('woff2'),
+         url('/src/assets/fonts/Rajdhani-Bold.woff') format('woff');
+}

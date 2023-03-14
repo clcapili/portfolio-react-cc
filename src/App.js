@@ -9,23 +9,25 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
-import './assets/css/index.css';
+import './assets/css/styles.css';
+import './assets/css/fonts.css';
+
+import { headerScript } from './../src/assets/js/scripts.js';
 
 export default function App() {
-  return (
-    <div>
+  // load header script
+  setTimeout(headerScript, 300);
 
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path='about' element={<About />} />
-          <Route path='projects' element={<Projects />} />
-          <Route path='contact' element={<Contact />} />
-          <Route path='*' element={<NotFound />} />
-        </Route>
-      </Routes>
-      
-    </div>
+  return (
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='about' element={<About />} />
+        <Route path='projects' element={<Projects />} />
+        <Route path='contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 }
 
