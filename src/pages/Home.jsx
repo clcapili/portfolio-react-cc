@@ -97,8 +97,8 @@ export default function Home() {
           </div>
         </div>
 
-        <Link to='/projects'>
-          <h3>View All Projects</h3>
+        <Link to='/projects' className='bottom-link'>
+          <h2>View All Projects</h2>
           <img src={iconLong} alt='Icon arrow long right for next page links' />
         </Link>
       </div>
