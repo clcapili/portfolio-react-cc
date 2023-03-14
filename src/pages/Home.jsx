@@ -14,22 +14,24 @@ export default function Home() {
   return (
     <section className='pages home'>
       <div className='container'>
-        <div className='row'>
-          <div className='col-7'>
-            <h2>I design & build websites.</h2>
-          </div>
-          <div className='col-5'>
-            <p>My expertise includes full-stack development, responsive design, CMS and RestAPI implementation, and intuitive and user-centered design.</p>
+        <div className='hero-column'>
+          <div className='row'>
+            <div className='col-md-7'>
+              <h2>I design &amp; <span>build websites.</span></h2>
+            </div>
+            <div className='col-md-5'>
+              <p>My expertise includes full-stack development, responsive design, CMS and RestAPI implementation, and intuitive and user-centered design.</p>
+            </div>
           </div>
         </div>
 
         <div className='row'>
-          <div className='col-5'>
+          <div className='col-md-5'>
             <Link to='/' className='featured-project'>
-              <img src={weatherApiImg} alt='WeatherAPI project using RestAPI' />
+              <img src={weatherApiImg} className='project-img' alt='WeatherAPI project using RestAPI' />
 
-              <div className=''>
-                <div>
+              <div className='project-details'>
+                <div className='project-name'>
                   <h6>WeatherAPI</h6>
                   <img src={icon} alt='Icon arrow up right for external links' />
                 </div>
@@ -41,12 +43,12 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className='col-7'>
+          <div className='col-md-7'>
             <Link to='/' className='featured-project'>
-              <img src={responsiveGridImg} alt='Responsive Page project using CSS Grid' />
+              <img src={responsiveGridImg} className='project-img' alt='Responsive Page project using CSS Grid' />
 
-              <div className=''>
-                <div>
+              <div className='project-details'>
+                <div className='project-name'>
                   <h6>Grid Responsive Page</h6>
                   <img src={icon} alt='Icon arrow up right for external links' />
                 </div>
@@ -60,12 +62,12 @@ export default function Home() {
         </div>
 
         <div className='row'>
-          <div className='col-7'>
+          <div className='col-md-7'>
             <Link to='/' className='featured-project'>
-              <img src={nxrImg} alt='Northern Xscape Rentals App UI/UX project' />
+              <img src={nxrImg} className='project-img' alt='Northern Xscape Rentals App UI/UX project' />
 
-              <div className=''>
-                <div>
+              <div className='project-details'>
+                <div className='project-name'>
                   <h6>Northern Xscape Rentals App</h6>
                   <img src={icon} alt='Icon arrow up right for external links' />
                 </div>
@@ -77,12 +79,12 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className='col-5'>
+          <div className='col-md-5'>
             <Link to='/' className='featured-project'>
-              <img src={plusroomImg} alt='PlusRoom App UI/UX project' />
+              <img src={plusroomImg} className='project-img' alt='PlusRoom App UI/UX project' />
 
-              <div className=''>
-                <div>
+              <div className='project-details'>
+                <div className='project-name'>
                   <h6>PlusRoom App</h6>
                   <img src={icon} alt='Icon arrow up right for external links' />
                 </div>
@@ -96,10 +98,8 @@ export default function Home() {
         </div>
 
         <Link to='/projects'>
-          <div className='row'>
-            <h3>View All Projects</h3>
-            <img src={iconLong} alt='Icon arrow long right for next page links' />
-          </div>
+          <h3>View All Projects</h3>
+          <img src={iconLong} alt='Icon arrow long right for next page links' />
         </Link>
       </div>
     </section>
