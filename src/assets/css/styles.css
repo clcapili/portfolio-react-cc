@@ -192,16 +192,28 @@ body.mobile-menu-open {
 /* footer */
 footer {
   width: 100%;
+  padding: 6.875rem 0;
   border-top: 1px solid #000;
 }
 
 footer h6 {
   font-family: 'RajdhaniSemibold', Arial, sans-serif;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .footer-wrapper .footer-col .social-links li {
   font-size: 1.563rem;
+  margin-bottom: 13px;
+}
+
+.footer-wrapper .contact-details .contact a {
+  font-size: 1.563rem;
+}
+
+.footer-wrapper .footer-col .social-links li img,
+.footer-wrapper .contact-details .contact a img {
+  margin-left: 10px;
 }
 
 /* pages */
