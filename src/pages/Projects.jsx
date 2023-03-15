@@ -1,4 +1,7 @@
-import { useEffect } from 'react'
+import { React, useEffect } from 'react'
+import { Link } from 'react-router-dom';
+
+import iconLong from './../assets/img/icon-arrow-long-right.svg';
 
 export default function Projects() {
   useEffect(() => {
@@ -16,9 +19,28 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className='project'>
+      <section className='projects-archive'>
         <div className='container'>
-          
+          <Link to='/projects/astrology-icons'>
+            <div className='row project-single'>
+              {/* outer-left */}
+              <div className='order'>
+                01
+              </div>
+
+              {/* center */}
+              <div className='project-info'>
+                <h2>Astrology Icons</h2>
+                <small>Illustration / Design / Personal</small>
+                <p>Collaboration project where we design six unique icons with minimalist and consistent design style.</p>
+              </div>
+
+              {/* outer-right */}
+              <div className='arrow-link'>
+                <img src={iconLong} alt='Icon arrow long right for next page links' />
+              </div>
+            </div>
+          </Link>
         </div>
       </section>
     </div>

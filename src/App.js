@@ -7,7 +7,11 @@ import TransitionComponent from './components/Transition';
 
 import Home from './pages/Home';
 import About from './pages/About';
+
+// projects
 import Projects from './pages/Projects';
+import AstrologyIcons from './pages/projects/AstrologyIcons';
+
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -32,23 +36,37 @@ export default function App() {
           }
         />
         <Route 
-          path='about' 
+          path='/about' 
           element={
             <TransitionComponent>
               <About />
             </TransitionComponent>
           }
         />
-        <Route
-          path='projects' 
-          element={
-          <TransitionComponent>
-            <Projects />
-          </TransitionComponent>
-          }
-        />
+        
+        {/* nested routes start */}
+        <Route path='/projects'>
+          <Route
+            index
+            element={
+              <TransitionComponent>
+                <Projects />
+              </TransitionComponent>
+            }
+          />
+          <Route
+            path='/projects/astrology-icons' 
+            element={
+            <TransitionComponent>
+              <AstrologyIcons />
+            </TransitionComponent>
+            }
+          />
+        </Route>
+        {/* nested routes end */}
+
         <Route 
-          path='contact' 
+          path='/contact' 
           element={
             <TransitionComponent>
               <Contact />

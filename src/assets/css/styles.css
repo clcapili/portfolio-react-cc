@@ -14,6 +14,7 @@ p { font-size: 1.563rem; line-height: 1.5; }   /* 1.125rem | 1.563rem > font-siz
 
 p:not(:last-child) { margin-bottom: 20px; }
 a { color: #000; text-decoration: none; }
+small { font-size: 1rem; }
 
 img {
   max-width: 100%;
@@ -54,6 +55,14 @@ img {
   margin-left: calc(-0.5*var(--bs-gutter-x));
 }
 
+.gx-0 {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  margin-top: calc(-1*var(--bs-gutter-y));
+  margin-right: calc(-0.5*var(--bs-gutter-x));
+  margin-left: calc(-0.5*var(--bs-gutter-x));
+}
+
 .row>* {
   flex-shrink: 0;
   width: 100%;
@@ -61,6 +70,16 @@ img {
   padding-right: calc(var(--bs-gutter-x)*.5);
   padding-left: calc(var(--bs-gutter-x)*.5);
   margin-top: var(--bs-gutter-y);
+}
+
+.col-md-10,
+.col-md-8,
+.col-md-7,
+.col-md-5,
+.col-md-4 {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 
 /* header desktop */
@@ -323,12 +342,6 @@ footer h6 {
   flex-direction: column-reverse;
 }
 
-.about .about-me .row .col-md-7 {
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-}
-
 .about .about-me .skillset h6 {
   font-family: 'RajdhaniSemibold', Arial, sans-serif;
   text-transform: uppercase;
@@ -350,7 +363,7 @@ footer h6 {
   margin-bottom: 10px;
 }
 
-/* projects */
+/* projects - dark theme */
 body.projects-layout {
   background-color: #000;
   color: #fff;
@@ -364,6 +377,15 @@ body.projects-layout header .header-desktop nav a.active {
   color: #B9FF1F;
 }
 
+body.projects-layout .header-mobile {
+  background-color: #000;
+  border-color: #fff;
+}
+
+body.projects-layout .header-mobile .hamburger-menu .icon-bar {
+  background-color: #fff;
+}
+
 body.projects-layout a {
   color: #fff;
 }
@@ -372,14 +394,164 @@ body.projects-layout img {
   filter: grayscale(1) invert(1);
 }
 
+body.projects-layout .hero-text {
+  border-color: #fff;
+}
+
 body.projects-layout footer {
   border-top: 1px solid #fff;
+}
+
+/* projects archive single */
+.project-single {
+  padding: 60px 0;
+}
+
+.project-single .order {
+  font-family: 'RajdhaniBold', Arial, sans-serif;
+  font-size: 1.875rem;
+  line-height: 2;
+  position: relative;
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.project-single .project-info {
+  position: relative;
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.project-single .project-info h2 {
+  margin-bottom: 15px;
+}
+
+.project-single .arrow-link {
+  position: relative;
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.project-single .arrow-link img {
+  margin-top: 50px;
+}
+
+.project-single .project-info h2 {
+  font-family: 'RajdhaniBold', Arial, sans-serif;
+}
+
+.project-single .project-info small {
+  font-family: 'RajdhaniMedium', Arial, sans-serif;
+  color: #B9FF1F;
+}
+
+.project-single .project-info p {
+  color: #BCBCBC;
+  margin-top: 20px;
 }
 
 .projects h3 {
   font-family: 'AvenirLtStdMedium', Arial, sans-serif;
 }
 
+/* project single template */
+.project-single-template .hero-text {
+  border-bottom: none;
+}
+
+.project-single-template .hero-text h1 {
+  font-family: 'AvenirLtStdBlack', Arial, sans-serif;
+  margin-bottom: 30px;
+}
+
+.project-single-template .hero-text span {
+  font-family: 'RajdhaniRegular', Arial, sans-serif;
+  font-size: 1.375rem;
+  color: #BCBCBC;
+}
+
+.project-single-template-inner img {
+  display: block;
+  width: 100%;
+}
+
+.project-single-template-inner p {
+  font-size: 2.188rem;
+}
+
+.project-single-template-inner .project-takeaway {
+  padding-bottom: 16.75rem;
+}
+
+.project-single-template-inner .project-summary {
+  padding: 9.375rem 0;
+}
+
+.project-single-template-inner .project-summary h5 {
+  font-family: 'RajdhaniBold', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.project-single-template-inner .project-summary .challenge,
+.project-single-template-inner .project-summary .solution {
+  margin-bottom: 70px;
+}
+
+.project-single-template-inner .project-summary .sidebar-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.project-single-template-inner .project-summary .sidebar-summary .summary {
+  width: 100%;
+}
+
+.project-single-template-inner .project-summary .sidebar-summary .summary:not(:last-child) {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #BCBCBC;
+}
+
+.project-single-template-inner .project-summary .sidebar-summary .summary h6 {
+  font-family: 'RajdhaniSemibold', Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.project-single-template-inner .project-summary .sidebar-summary .summary ul {
+  font-family: 'RajdhaniRegular', Arial, sans-serif;
+  font-size: 1.563rem;
+}
+
+.project-single-template-inner .project-summary .sidebar-summary .summary ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* project pager */
+.pager {
+  padding: 10.938rem 0;
+}
+
+.pager .next {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.pager .next h4 {
+  font-family: 'AvenirLtStdBlack', Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.pager .next h1 {
+  font-family: 'RajdhaniRegular', Arial, sans-serif;
+}
+
+/* featured project @ home */
 .featured-project {
   margin-bottom: 60px;
 }
@@ -445,8 +617,13 @@ body.projects-layout footer {
   }
 
   .container { max-width: 720px; }
+  .col-md-10 { flex: 0 0 auto; width: 83.33333333%; }
+  .col-md-8 { flex: 0 0 auto; width: 66.66666667%; }
   .col-md-7 { flex: 0 0 auto; width: 58.33333333%; }
   .col-md-5 { flex: 0 0 auto; width: 41.66666667%; }
+  .col-md-4 { flex: 0 0 auto; width: 33.33333333%; }
+
+  .col-6 { width: 50%; }
 
   .home h2 {
     margin-bottom: 0;
@@ -468,6 +645,25 @@ body.projects-layout footer {
     flex-direction: row;
   }
 
+  .project-single .order {
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+  
+  .project-single .project-info {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  
+  .project-single .arrow-link {
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+
+  .project-single .arrow-link img {
+    margin-top: 20px;
+  }
+
   .footer-wrapper .footer-col { flex: 0 0 50%; max-width: 50%; }
 
   .footer-wrapper .footer-col .contact-details .contact {
@@ -477,6 +673,9 @@ body.projects-layout footer {
 
 @media (min-width: 992px) {
   .container { max-width: 960px; }
+  
+  .col-lg-8 { flex: 0 0 auto; width: 66.66666667%; }
+  .col-lg-4 { flex: 0 0 auto; width: 33.33333333%; }
 
   .header-desktop {
     display: block;
@@ -492,6 +691,10 @@ body.projects-layout footer {
 
   .about .about-me {
     padding: 150px 0;
+  }
+
+  .project-single-template-inner .project-summary .solution {
+    margin-bottom: 0;
   }
 }
 
@@ -512,6 +715,10 @@ body.projects-layout footer {
   }
 
   .about .about-me .skills {
+    width: 80%;
+  }
+
+  .project-single-template-inner .project-summary .sidebar-summary .summary {
     width: 80%;
   }
   
