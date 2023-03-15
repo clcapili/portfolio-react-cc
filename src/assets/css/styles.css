@@ -443,6 +443,15 @@ body.projects-layout footer {
   border-top: 1px solid #fff;
 }
 
+/* projects archive */
+.projects-archive .project:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+
+.projects-archive .project:last-child {
+  margin-bottom: 8rem;
+}
+
 /* projects archive single */
 .project-single {
   padding: 60px 0;
@@ -763,6 +772,33 @@ body.projects-layout footer {
   margin-right: 20px;
 }
 
+/* not found */
+.not-found .hero-text {
+  border-bottom: none;
+}
+
+.not-found .hero-text .col-6 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.not-found .hero-text h1 {
+  font-family: 'RajdhaniBold', Arial, sans-serif;
+}
+
+.not-found .hero-text .back-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found .back-link a img {
+  width: 10%;
+}
+
 /* desktop */
 @media (min-width: 576px) {
   h1 {
@@ -858,6 +894,10 @@ body.projects-layout footer {
   .footer-wrapper .footer-col { flex: 0 0 50%; max-width: 50%; }
 
   .footer-wrapper .footer-col .contact-details .contact {
+    margin-bottom: 0;
+  }
+
+  .not-found .hero-text .col-6 {
     margin-bottom: 0;
   }
 }

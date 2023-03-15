@@ -11,6 +11,7 @@ import About from './pages/About';
 // projects
 import Projects from './pages/Projects';
 import AstrologyIcons from './pages/projects/AstrologyIcons';
+import WeatherAPI from './pages/projects/WeatherAPI';
 
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -59,6 +60,14 @@ export default function App() {
             element={
             <TransitionComponent>
               <AstrologyIcons />
+            </TransitionComponent>
+            }
+          />
+          <Route
+            path='/projects/weather-api' 
+            element={
+            <TransitionComponent>
+              <WeatherAPI />
             </TransitionComponent>
             }
           />

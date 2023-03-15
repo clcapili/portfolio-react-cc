@@ -30,7 +30,7 @@ export default function Home() {
         <section className='row featured-projects'>
           <div className='col-md-5'>
             <div className='featured-project'>
-              <Link to='/'>
+              <Link to='/projects/weather-api'>
                 <img src={weatherApiImg} className='project-img' alt='WeatherAPI project using RestAPI' />
 
                 <div className='project-details'>
