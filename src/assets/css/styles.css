@@ -593,6 +593,60 @@ body.projects-layout footer {
   font-family: 'AvenirLtStdLight', Arial, sans-serif;
 }
 
+.contact .contact-wrapper {
+  padding: 8.125rem 0 16.875rem;
+}
+
+.contact .contact-wrapper h1 {
+  font-family: 'AvenirLtStdMedium', Arial, sans-serif;
+  margin-bottom: 60px;
+}
+
+.contact .contact-wrapper form .form-fields {
+  font-family: 'RajdhaniSemibold', Arial, sans-serif;
+  font-size: 1.563rem;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #BCBCBC;
+}
+
+.contact .contact-wrapper form .form-fields:first-child {
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 1px solid #BCBCBC;
+}
+
+.contact .contact-wrapper form .form-fields label>span {
+  margin-right: 25px;
+}
+
+.contact .contact-wrapper form input {
+  font-family: 'RajdhaniRegular', Arial, sans-serif;
+  font-size: 1.563rem;
+  display: block;
+  padding-top: 10px;
+  border: none;
+  margin-left: 48px;
+}
+
+.contact .contact-wrapper form .submit-button input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  font-family: 'RajdhaniSemibold', Arial, sans-serif;
+  margin: 0 !important;
+  margin-bottom: 20px !important;
+  padding: 25px 0 !important;
+  width: 100%;
+}
+
+.contact .contact-wrapper form .legal {
+  font-size: 1.125rem;
+}
+
+.contact .contact-wrapper .form-wrapper .legal a {
+  text-decoration: underline;
+}
+
 /* desktop */
 @media (min-width: 576px) {
   h1 {
