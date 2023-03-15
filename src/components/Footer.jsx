@@ -29,25 +29,25 @@ export default function Footer() {
               
               <ul className='social-links'>
                 <li>
-                  <Link to='https://codepen.io/charlenelcapili' target={'_blank'}>
+                  <Link to='https://codepen.io/charlenelcapili' className='link-hover' target={'_blank'}>
                     Codepen
                     <img src={icon} alt='Icon arrow up right for external links' />
                   </Link>
                 </li>
                 <li>
-                  <Link to='https://github.com/clcapili' target={'_blank'}>
+                  <Link to='https://github.com/clcapili' className='link-hover' target={'_blank'}>
                     Github
                     <img src={icon} alt='Icon arrow up right for external links' />
                   </Link>
                 </li>
                 <li>
-                  <Link to='https://www.behance.net/charlenelcapili' target={'_blank'}>
+                  <Link to='https://www.behance.net/charlenelcapili' className='link-hover' target={'_blank'}>
                     Behance
                     <img src={icon} alt='Icon arrow up right for external links' />
                   </Link>
                 </li>
                 <li>
-                  <Link to='https://www.linkedin.com/in/charlenelcapili/' target={'_blank'}>
+                  <Link to='https://www.linkedin.com/in/charlenelcapili/' className='link-hover' target={'_blank'}>
                     LinkedIn
                     <img src={icon} alt='Icon arrow up right for external links' />
                   </Link>
@@ -62,7 +62,7 @@ export default function Footer() {
               <div className='contact'>
                 <h6>Let's talk</h6>
                 <p>Charlene Capili</p>
-                <Link to='mailto:hello@charlenelcapili.me' target={'_blank'}>
+                <Link to='mailto:hello@charlenelcapili.me' className='link-hover' target={'_blank'}>
                   hello@charlenelcapili.me
                   <img src={icon} alt='Icon arrow up right for external links' />
                 </Link>
