@@ -114,6 +114,13 @@ header .header-desktop nav a {
   line-height: 0;
   color: #BCBCBC;
   margin-left: 65px;
+  transition: 0.3s;
+}
+
+header .header-desktop nav ul a:hover {
+  margin-left: 65px;
+  color: #000;
+  transition: 0.3s;
 }
 
 header .header-desktop nav a span {
@@ -297,11 +304,17 @@ footer h6 {
 }
 
 /* pages */
-.pages { margin-top: 4.6rem; }
+.pages { 
+  margin-top: 4.6rem;
+}
+
+.pages.home {
+  padding: 15.625rem 0 5rem;
+}
 
 /* parts */
 .hero-column {
-  padding: 15.625rem 0 5rem;
+  padding-bottom: 5rem;
 }
 
 .hero-column .description {
@@ -337,6 +350,10 @@ footer h6 {
 
 .home .row {
   margin-bottom: 6.25rem;
+}
+
+.home .row:first-child {
+  margin-bottom: 0;
 }
 
 .home .row.featured-projects {
@@ -715,7 +732,7 @@ body.projects-layout footer {
 }
 
 .contact .contact-wrapper .sidebar-contact ul li a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 

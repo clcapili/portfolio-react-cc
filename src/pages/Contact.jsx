@@ -77,7 +77,7 @@ export default function Contact() {
                     <h6>Socials</h6>
                     <ul>
                       <li>
-                        <Link to='https://codepen.io/charlenelcapili' target='_blank'>
+                        <Link to='https://codepen.io/charlenelcapili' className='link-hover' target='_blank'>
                           {/* icon */}
                           <img src={codepenIcon} className='social-icon' alt='SVG icon for Codepen' />
                           codepen
@@ -85,7 +85,7 @@ export default function Contact() {
                       </li>
 
                       <li>
-                        <Link to='https://github.com/clcapili' target='_blank'>
+                        <Link to='https://github.com/clcapili' className='link-hover' target='_blank'>
                           {/* icon */}
                           <img src={githubIcon} className='social-icon' alt='SVG icon for Github' />
                           github
@@ -93,7 +93,7 @@ export default function Contact() {
                       </li>
 
                       <li>
-                        <Link to='https://www.behance.net/charlenelcapili' target='_blank'>
+                        <Link to='https://www.behance.net/charlenelcapili' className='link-hover' target='_blank'>
                           {/* icon */}
                           <img src={behanceIcon} className='social-icon' alt='SVG icon for Behance' />
                           behance
@@ -101,7 +101,7 @@ export default function Contact() {
                       </li>
 
                       <li>
-                        <Link to='https://www.linkedin.com/in/charlenelcapili/' target='_blank'>
+                        <Link to='https://www.linkedin.com/in/charlenelcapili/' className='link-hover' target='_blank'>
                           {/* icon */}
                           <img src={linkedinIcon} className='social-icon' alt='SVG icon for LinkedIn' />
                           linkedin
