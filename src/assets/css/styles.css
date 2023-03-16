@@ -558,21 +558,29 @@ body.projects-layout footer {
 .project-single-template .hero-text h1 {
   font-family: 'AvenirLtStdBlack', Arial, sans-serif;
   margin-bottom: 30px;
+  opacity: 0;
+  transform: translate(0, -200px);
 }
 
 .project-single-template .hero-text span {
   font-family: 'RajdhaniRegular', Arial, sans-serif;
   font-size: 1.375rem;
   color: #BCBCBC;
+  opacity: 0;
+  transform: translate(0, 0);
 }
 
 .project-single-template-inner img {
   display: block;
   width: 100%;
+  opacity: 0;
+  transform: translate(0, 200px);
 }
 
 .project-single-template-inner p { 
   font-size: clamp(1.563rem, 1.1463rem + 1.1574vw, 2.188rem);
+  opacity: 0;
+  transform: translate(0, 0);
 }
 
 .project-single-template-inner .project-takeaway {

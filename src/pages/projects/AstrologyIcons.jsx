@@ -1,5 +1,7 @@
 import ScrollToTopOnLinkClick from './../../components/ScrollToTopOnLinkClick';
 
+import FadeInAnimation from './../../components/FadeInAnimation';
+
 import astrologyIcon1 from './../../assets/img/astrology-icons/astrology-icons-1.jpg';
 import astrologyIcon2 from './../../assets/img/astrology-icons/astrology-icons-2.jpg';
 import astrologyIcon3 from './../../assets/img/astrology-icons/astrology-icons-3.jpg';
@@ -20,8 +22,8 @@ export default function AstrologyIcons() {
     <div className='pages project-single-template'>
       <section className='hero-text'>
         <div className='container'>
-          <h1>Astrology Icons</h1>
-          <span>Illustration  /  Design  /  Personal</span>
+          <FadeInAnimation wrapperElement='h1' className='trigger' direction='down'>Astrology Icons</FadeInAnimation>
+          <FadeInAnimation wrapperElement='span' className='trigger' direction=''>Illustration  /  Design  /  Personal</FadeInAnimation>
         </div>
       </section>
 
@@ -30,13 +32,13 @@ export default function AstrologyIcons() {
           <div className='container'>
             <div className='row'>
               <div className='col-md-10'>
-                <p>Collaboration project where we design six unique icons with minimalist and consistent design style.</p>
+                <FadeInAnimation wrapperElement='p' className='trigger' direction=''>Collaboration project where we design six unique icons with minimalist and consistent design style.</FadeInAnimation>
               </div>
             </div>
           </div>
         </section>
 
-        <img src={astrologyIcon1} alt='Astrology Icon Mockup #1' />
+        <FadeInAnimation wrapperElement='img' src={astrologyIcon1} alt='Astrology Icon Mockup #1' className='trigger' direction=''></FadeInAnimation>
         
         <section className='project-summary'>
           <div className='container'>
@@ -44,12 +46,12 @@ export default function AstrologyIcons() {
               <div className='col-lg-8'>
                 <div className='challenge'>
                   <h5>Challenge</h5>
-                  <p>Create six unique icons from the Astrology signs</p>
+                  <FadeInAnimation wrapperElement='p' className='trigger' direction='up'>Create six unique icons from the Astrology signs</FadeInAnimation>
                 </div>
 
                 <div className='solution'>
                   <h5>Solution</h5>
-                  <p>We designed a book series of six icons with a cohesive design style, while ensuring each icon had a distinct and recognizable symbol that represented its intended meaning.</p>
+                  <FadeInAnimation wrapperElement='p' className='trigger' direction='up'>We designed a book series of six icons with a cohesive design style, while ensuring each icon had a distinct and recognizable symbol that represented its intended meaning.</FadeInAnimation>
                 </div>
               </div>
 
@@ -89,51 +91,51 @@ export default function AstrologyIcons() {
           </div>
         </section>
 
-        <img src={astrologyIcon2} alt='Astrology Icon Mockup #2' />
+        <FadeInAnimation wrapperElement='img' src={astrologyIcon2} alt='Astrology Icon Mockup #2' className='trigger' direction=''></FadeInAnimation>
 
         <section className='project-summary'>
           <div className='container'>
             <div className='row'>
               <div className='col-lg-10'>
-                <p>We began our project by researching the characteristics and meanings behind each of the Astrology Signs. This helped us to understand the essence of each sign and design icons that truly represented them.</p>
+                <FadeInAnimation wrapperElement='p' className='trigger' direction=''>We began our project by researching the characteristics and meanings behind each of the Astrology Signs. This helped us to understand the essence of each sign and design icons that truly represented them.</FadeInAnimation>
               </div>
             </div>
           </div>
         </section>
 
-        <img src={astrologyIcon3} alt='Astrology Icon Mockup #3' />
+        <FadeInAnimation wrapperElement='img' src={astrologyIcon3} alt='Astrology Icon Mockup #3' className='trigger' direction=''></FadeInAnimation>
 
         <section className='project-summary'>
           <div className='container'>
             <div className='row'>
               <div className='col-lg-10'>
-                <p>We then sketched out multiple ideas and concepts for each icon, experimenting with different compositions and shapes.</p>
+                <FadeInAnimation wrapperElement='p' className='trigger' direction=''>We then sketched out multiple ideas and concepts for each icon, experimenting with different compositions and shapes.</FadeInAnimation>
               </div>
             </div>
           </div>
         </section>
 
-        <img src={astrologyIcon4} alt='Astrology Icon Mockup #4' />
+        <FadeInAnimation wrapperElement='img' src={astrologyIcon4} alt='Astrology Icon Mockup #4' className='trigger' direction=''></FadeInAnimation>
 
         <section className='project-summary'>
           <div className='container'>
             <div className='row'>
               <div className='col-lg-10'>
-                <p>We used the golden ratio method on each of the symbols to ensure that they were perfectly balanced and proportionate.</p>
+                <FadeInAnimation wrapperElement='p' className='trigger' direction=''>We used the golden ratio method on each of the symbols to ensure that they were perfectly balanced and proportionate.</FadeInAnimation>
               </div>
             </div>
           </div>
         </section>
 
-        <img src={astrologyIcon5} alt='Astrology Icon Mockup #5' />
+        <FadeInAnimation wrapperElement='img' src={astrologyIcon5} alt='Astrology Icon Mockup #5' className='trigger' direction=''></FadeInAnimation>
 
-        <img src={astrologyIcon6} alt='Astrology Icon Mockup #6' />
+        <FadeInAnimation wrapperElement='img' src={astrologyIcon6} alt='Astrology Icon Mockup #6' className='trigger' direction=''></FadeInAnimation>
 
         <section className='project-summary'>
           <div className='container'>
             <div className='row'>
               <div className='col-lg-10'>
-                <p>Once we had a rough idea of what we wanted to create, we refined our sketches and digitized them using Adobe Illustrator.</p>
+                <FadeInAnimation wrapperElement='p' className='trigger' direction=''>Once we had a rough idea of what we wanted to create, we refined our sketches and digitized them using Adobe Illustrator.</FadeInAnimation>
               </div>
             </div>
           </div>
@@ -142,11 +144,11 @@ export default function AstrologyIcons() {
         <section>
           <div className='row gx-0'>
             <div className='col-6'>
-              <img src={astrologyIcon7} alt='Astrology Icon Mockup #7' />
+              <FadeInAnimation wrapperElement='img' src={astrologyIcon7} alt='Astrology Icon Mockup #7' className='trigger' direction=''></FadeInAnimation>
             </div>
 
             <div className='col-6'>
-              <img src={astrologyIcon8} alt='Astrology Icon Mockup #8' />
+              <FadeInAnimation wrapperElement='img' src={astrologyIcon8} alt='Astrology Icon Mockup #8' className='trigger' direction=''></FadeInAnimation>
             </div>
           </div>
         </section>
@@ -154,11 +156,11 @@ export default function AstrologyIcons() {
         <section>
           <div className='row gx-0'>
             <div className='col-6'>
-              <img src={astrologyIcon9} alt='Astrology Icon Mockup #9' />
+              <FadeInAnimation wrapperElement='img' src={astrologyIcon9} alt='Astrology Icon Mockup #9' className='trigger' direction=''></FadeInAnimation>
             </div>
 
             <div className='col-6'>
-              <img src={astrologyIcon10} alt='Astrology Icon Mockup #10' />
+              <FadeInAnimation wrapperElement='img' src={astrologyIcon10} alt='Astrology Icon Mockup #10' className='trigger' direction=''></FadeInAnimation>
             </div>
           </div>
         </section>
@@ -166,28 +168,28 @@ export default function AstrologyIcons() {
         <section>
           <div className='row gx-0'>
             <div className='col-6'>
-              <img src={astrologyIcon11} alt='Astrology Icon Mockup #11' />
+              <FadeInAnimation wrapperElement='img' src={astrologyIcon11} alt='Astrology Icon Mockup #11' className='trigger' direction=''></FadeInAnimation>
             </div>
 
             <div className='col-6'>
-              <img src={astrologyIcon12} alt='Astrology Icon Mockup #12' />
+              <FadeInAnimation wrapperElement='img' src={astrologyIcon12} alt='Astrology Icon Mockup #12' className='trigger' direction=''></FadeInAnimation>
             </div>
           </div>
         </section>
 
-        <img src={astrologyIcon13} alt='Astrology Icon Mockup #13' />
+        <FadeInAnimation wrapperElement='img' src={astrologyIcon13} alt='Astrology Icon Mockup #13' className='trigger' direction=''></FadeInAnimation>
 
         <section className='project-summary'>
           <div className='container'>
             <div className='row'>
               <div className='col-lg-10'>
-                <p>Throughout the design process, we focused on maintaining a consistent design concept across all six icons. This involves paying attention to small details like the color palette, composition, and stroke thickness. We were able to create simple yet visually appealing icons by combining line art and geometric shapes.</p>
+                <FadeInAnimation wrapperElement='p' className='trigger' direction=''>Throughout the design process, we focused on maintaining a consistent design concept across all six icons. This involves paying attention to small details like the color palette, composition, and stroke thickness. We were able to create simple yet visually appealing icons by combining line art and geometric shapes.</FadeInAnimation>
               </div>
             </div>
           </div>
         </section>
 
-        <img src={astrologyIcon14} alt='Astrology Icon Mockup #14' />
+        <FadeInAnimation wrapperElement='img' src={astrologyIcon14} alt='Astrology Icon Mockup #14' className='trigger' direction=''></FadeInAnimation>
 
         <section className='pager'>
           <div className='container'>
