@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ScrollToTopOnLinkClick from './../../components/ScrollToTopOnLinkClick';
 import FadeInAnimation from './../../components/FadeInAnimation';
 
+// import images
 import weatherApiImg1 from './../../assets/img/project-weatherapi-1.png';
 import weatherApiImg2 from './../../assets/img/project-weatherapi-2.png';
 
@@ -28,6 +29,7 @@ export default function WeatherAPI() {
 
         <FadeInAnimation wrapperElement='img' src={weatherApiImg1} alt='Weather API Mockup #1' className='trigger' direction=''></FadeInAnimation>
         
+        {/* project summary */}
         <section className='project-summary'>
           <div className='container'>
             <div className='row'>

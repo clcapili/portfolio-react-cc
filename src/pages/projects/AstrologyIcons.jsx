@@ -2,6 +2,7 @@ import ScrollToTopOnLinkClick from './../../components/ScrollToTopOnLinkClick';
 
 import FadeInAnimation from './../../components/FadeInAnimation';
 
+// import images
 import astrologyIcon1 from './../../assets/img/astrology-icons/astrology-icons-1.jpg';
 import astrologyIcon2 from './../../assets/img/astrology-icons/astrology-icons-2.jpg';
 import astrologyIcon3 from './../../assets/img/astrology-icons/astrology-icons-3.jpg';
@@ -26,7 +27,6 @@ export default function AstrologyIcons() {
           <FadeInAnimation wrapperElement='span' className='trigger' direction=''>Illustration  /  Design  /  Personal</FadeInAnimation>
         </div>
       </section>
-
       <div className='project-single-template-inner'>
         <section className='project-takeaway'>
           <div className='container'>
@@ -40,6 +40,7 @@ export default function AstrologyIcons() {
 
         <FadeInAnimation wrapperElement='img' src={astrologyIcon1} alt='Astrology Icon Mockup #1' className='trigger' direction=''></FadeInAnimation>
         
+        {/* project summary */}
         <section className='project-summary'>
           <div className='container'>
             <div className='row'>

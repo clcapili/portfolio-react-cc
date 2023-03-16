@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-
 import FadeInAnimation from './../components/FadeInAnimation';
 
+// import images
 import computer from './../assets/img/404.svg';
 import iconLongLeft from './../assets/img/icon-arrow-long-left.svg';
 

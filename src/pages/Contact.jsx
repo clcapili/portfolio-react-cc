@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-
 import FadeInAnimation from './../components/FadeInAnimation';
 
+// import images
 import displayPhoto from './../assets/img/display-photo.jpg';
 import codepenIcon from './../assets/img/icon-codepen.svg';
 import githubIcon from './../assets/img/icon-github.svg';
@@ -33,6 +33,7 @@ export default function Contact() {
         <div className='container'>
           <div className='row form-wrapper'>
             <div className='col-lg-8'>
+              {/* form start */}
               <form>
                 <div className='form-fields'>
                   <label htmlFor='full-name'><span>01</span>Full name*</label>
@@ -58,6 +59,7 @@ export default function Contact() {
                   <input type='submit' value='Submit' />
                 </div>
               </form>
+              {/* form end */}
 
               <div className='legal'>By submitting this form you consent to data processing and communication in accordance with the <Link to='/' className='link-hover'> privacy policy</Link>.</div>
             </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import FadeInAnimation from './../components/FadeInAnimation';
 import ScrollToTopOnLinkClick from './../components/ScrollToTopOnLinkClick';
 
@@ -8,7 +7,6 @@ import weatherApiImg from './../assets/img/project-weatherapi.jpg';
 import responsiveGridImg from './../assets/img/project-responsivegrid.jpg';
 import nxrImg from './../assets/img/project-nxrental.jpg';
 import plusroomImg from './../assets/img/project-plusroom.jpg';
-
 import icon from './../assets/img/icon-arrow-up-right.svg';
 import iconLong from './../assets/img/icon-arrow-long-right.svg';
 
@@ -34,6 +32,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* projects highlights */}
         <section className='row featured-projects'>
           <div className='col-md-5'>
             <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
@@ -114,6 +113,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* link to projects page */}
         <section className='row'>
           <ScrollToTopOnLinkClick to='/projects' className='bottom-link'>
             <h2>View All Projects</h2>

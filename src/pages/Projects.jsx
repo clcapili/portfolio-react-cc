@@ -1,8 +1,8 @@
 import { React, useEffect } from 'react'
 import ScrollToTopOnLinkClick from './../components/ScrollToTopOnLinkClick';
-
 import FadeInAnimation from './../components/FadeInAnimation';
 
+// import image
 import iconLong from './../assets/img/icon-arrow-long-right.svg';
 
 export default function Projects() {
