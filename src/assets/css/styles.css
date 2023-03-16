@@ -706,6 +706,8 @@ body.projects-layout footer {
 /* contact */
 .contact h3 {
   font-family: 'AvenirLtStdMedium', Arial, sans-serif;
+  opacity: 0;
+  transform: translate(0, 0);
 }
 
 .contact h3 span {
@@ -719,6 +721,8 @@ body.projects-layout footer {
 .contact .contact-wrapper h1 {
   font-family: 'AvenirLtStdMedium', Arial, sans-serif;
   margin-bottom: 60px;
+  opacity: 0;
+  transform: translate(0, -200px);
 }
 
 .contact .contact-wrapper form .form-fields {

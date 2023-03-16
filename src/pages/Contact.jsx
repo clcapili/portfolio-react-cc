@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import FadeInAnimation from './../components/FadeInAnimation';
+
 import displayPhoto from './../assets/img/display-photo.jpg';
 import codepenIcon from './../assets/img/icon-codepen.svg';
 import githubIcon from './../assets/img/icon-github.svg';
@@ -11,7 +13,9 @@ export default function Contact() {
     <div className='pages contact'>
       <section className='hero-text'>
         <div className='container'>
-          <h3>If you want to build a brand/website and don't know where to start — <span>drop me a line.</span></h3>
+          <FadeInAnimation wrapperElement='h3' className='trigger' direction=''>
+            If you want to build a brand/website and don't know where to start — <span>drop me a line.</span>
+          </FadeInAnimation>
         </div>
       </section>
 
@@ -19,7 +23,9 @@ export default function Contact() {
         <div className='container'>
           <div className='row'>
             <div className='col-md-10'>
-              <h1>Let's make something great!</h1>
+              <FadeInAnimation wrapperElement='h1' className='trigger' direction='down'>
+                Let's make something great!
+              </FadeInAnimation>
             </div>
           </div>
         </div>
