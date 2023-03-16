@@ -1,13 +1,14 @@
 // mobile nav position on scroll
 export function headerScript() {
-    var headerMobile = document.querySelector('.header-mobile');
+    let headerMobile = document.querySelector('.header-mobile');
+    let headerMobileLinks = headerMobile.querySelectorAll('.mobile-menu a');
     let mobileMenuIcon = document.querySelector('.hamburger-menu');
     let isMenuOpen = false;
 
-    var lastScrollTop = 0;
+    let lastScrollTop = 0;
     
-    window.addEventListener('scroll', function() {
-        var st = window.pageYOffset || document.documentElement.scrollTop;
+    window.addEventListener('scroll', () => {
+        let st = window.pageYOffset || document.documentElement.scrollTop;
         
         if (st > lastScrollTop && st > 100) {
         headerMobile.classList.remove('show');
@@ -18,7 +19,17 @@ export function headerScript() {
         lastScrollTop = st;
     });
     
-    mobileMenuIcon.addEventListener('click', function(){
+    mobileMenuIcon.addEventListener('click', () => {
+        headerMobileTrigger();
+    });
+
+    for (let i = 0; i < headerMobileLinks.length; i++) {
+        headerMobileLinks[i].addEventListener('click', () => {
+            headerMobileTrigger();
+        })
+    }
+
+    function headerMobileTrigger() {
         document.body.classList.add('mobile-menu-open');
         headerMobile.classList.add('open');
         isMenuOpen = !isMenuOpen;
@@ -27,5 +38,5 @@ export function headerScript() {
             document.body.classList.remove('mobile-menu-open');
             headerMobile.classList.remove('open');
         }
-    });
+    }
 }

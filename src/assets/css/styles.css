@@ -184,16 +184,32 @@ header .header-desktop nav a.active {
 
 .header-mobile .mobile-menu {
   margin-top: 10px;
-  padding: 30px 20px;
-  text-align: center;
+  padding: 8rem 0;
   overflow-x: hidden;
   box-sizing: border-box;
   display: none;
-
 }
 
-.header-mobile .mobile-menu .nav-link {
-  padding: 20px 0;
+.header-mobile.open .mobile-menu li {
+  margin-bottom: 30px;
+}
+
+.header-mobile.open .mobile-menu li a {
+  position: relative;
+  transition: 0.3s;
+  font-size: 3.5rem;
+  left: 0;
+}
+
+.header-mobile.open .mobile-menu li a:hover {
+  left: 20px;
+  transition: 0.3s;
+}
+
+.header-mobile.open .mobile-menu li a span {
+  font-family: 'RajdhaniRegular', Arial, sans-serif;
+  font-size: 25px;
+  margin-right: 10px;
 }
 
 .header-mobile.open {
@@ -608,7 +624,7 @@ body.projects-layout footer {
 }
 
 .featured-project .project-details {
-  display: flex;
+  display: inline-flex;
   flex-direction: column-reverse;
   justify-content: space-between;
   margin: 30px 0 20px;
@@ -790,9 +806,18 @@ body.projects-layout footer {
 }
 
 .not-found .hero-text .back-link a {
+  position: relative;
+  right: 0;
+  transition: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.not-found .hero-text .back-link a:hover {
+  position: relative;
+  right: 20px;
+  transition: 0.3s;
 }
 
 .not-found .back-link a img {

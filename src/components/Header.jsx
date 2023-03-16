@@ -92,7 +92,7 @@ export default function Header() {
                   }
                 >
                   <span>01</span>
-                  Home
+                  home
                 </NavLink>
             </li>
             <li>
@@ -103,7 +103,7 @@ export default function Header() {
                 }
               >
                 <span>02</span>
-                About
+                about
               </NavLink>
             </li>
             <li>
@@ -114,7 +114,7 @@ export default function Header() {
                 }
               >
                 <span>03</span>
-                Projects
+                projects
               </NavLink>
             </li>
             <li>
@@ -125,7 +125,7 @@ export default function Header() {
                 }
               >
                 <span>04</span>
-                Contact
+                contact
               </NavLink>
             </li>
           </ul>
