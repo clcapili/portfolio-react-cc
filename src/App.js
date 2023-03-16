@@ -3,8 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 
 import Layout from './components/Layout';
 
-import TransitionComponent from './components/Transition';
-
 import Home from './pages/Home';
 import About from './pages/About';
 
@@ -31,17 +29,13 @@ export default function App() {
         <Route
           index
           element={
-            <TransitionComponent>
-              <Home />
-            </TransitionComponent>
+            <Home />
           }
         />
         <Route 
           path='/about' 
           element={
-            <TransitionComponent>
-              <About />
-            </TransitionComponent>
+            <About />
           }
         />
         
@@ -50,25 +44,19 @@ export default function App() {
           <Route
             index
             element={
-              <TransitionComponent>
-                <Projects />
-              </TransitionComponent>
+              <Projects />
             }
           />
           <Route
             path='/projects/astrology-icons' 
             element={
-            <TransitionComponent>
               <AstrologyIcons />
-            </TransitionComponent>
             }
           />
           <Route
             path='/projects/weather-api' 
             element={
-            <TransitionComponent>
               <WeatherAPI />
-            </TransitionComponent>
             }
           />
         </Route>
@@ -77,17 +65,13 @@ export default function App() {
         <Route 
           path='/contact' 
           element={
-            <TransitionComponent>
-              <Contact />
-            </TransitionComponent>
+            <Contact />
           }
         />
         <Route
           path='*' 
           element={
-            <TransitionComponent>
-              <NotFound />
-            </TransitionComponent>
+            <NotFound />
           } 
         />
       </Route>
