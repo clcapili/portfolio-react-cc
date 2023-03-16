@@ -833,6 +833,8 @@ body.projects-layout footer {
 
 .not-found .hero-text h1 {
   font-family: 'RajdhaniBold', Arial, sans-serif;
+  opacity: 0;
+  transform: translate(0, -200px);
 }
 
 .not-found .hero-text .back-link a {
@@ -848,6 +850,21 @@ body.projects-layout footer {
   position: relative;
   right: 20px;
   transition: 0.3s;
+}
+
+.not-found .hero-text p {
+  opacity: 0;
+  transform: translate(0, 0);
+}
+
+.not-found .hero-text .computer-face {
+  opacity: 0;
+  transform: translate(0, 0);
+}
+
+.not-found .back-link {
+  opacity: 0;
+  transform: translate(0, 200px);
 }
 
 .not-found .back-link a img {
