@@ -39,7 +39,7 @@ export default function WeatherAPI() {
 
                 <div className='solution'>
                   <h5>Solution</h5>
-                  <FadeInAnimation wrapperElement='p' className='trigger' direction='up'>I utilized the <Link to='https://www.weatherapi.com/docs/' target='_blank' className='link-hover'>WeatherAPI</Link> to develop a dynamic web page that displays real-time weather information.</FadeInAnimation>
+                  <FadeInAnimation wrapperElement='p' className='trigger' direction='up'>I utilized the <Link to='https://www.weatherapi.com/docs/' target='_blank' className='link-hover'>WeatherAPI</Link> to develop a dynamic web page that displays real-time weather information. You can view the source code at my <Link to='https://github.com/clcapili/weather-api' target={'_blank'} className='link-hover'>github</Link> profile.</FadeInAnimation>
                 </div>
               </div>
 
