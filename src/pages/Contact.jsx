@@ -59,12 +59,12 @@ export default function Contact() {
                 </div>
               </form>
 
-              <div className='legal'>By submitting this form you consent to data processing and communication in accordance with the <Link to='/'> privacy policy</Link>.</div>
+              <div className='legal'>By submitting this form you consent to data processing and communication in accordance with the <Link to='/' className='link-hover'> privacy policy</Link>.</div>
             </div>
 
             <div className='col-lg-4'>
               <aside className="sidebar-contact">
-                <img src={displayPhoto} className='display-photo' alt='Charlene Capili display photo in an office' />
+                <img src={displayPhoto} className='display-photo' alt='Charlene Capili in an office' />
 
                 <div className='sidebar-summary'>
                   <div className='summary'>
