@@ -73,6 +73,81 @@ export default function Projects() {
             </div>
           </ScrollToTopOnLinkClick>
         </FadeInAnimation>
+
+        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
+          <ScrollToTopOnLinkClick to='/projects'>
+            <div className='container'>
+              <div className='row project-single'>
+                {/* outer-left */}
+                <div className='order'>
+                  03
+                </div>
+
+                {/* center */}
+                <div className='project-info'>
+                  <h2>Grid Responsive</h2>
+                  <small>UI / Design / Code / Personal</small>
+                  <p>A web design which I utilized the CSS Grid system to create a flexible and responsive layout for different screen sizes and devices</p>
+                </div>
+
+                {/* outer-right */}
+                <div className='arrow-link'>
+                  <img src={iconLong} alt='Icon arrow long right for next page links' />
+                </div>
+              </div>
+            </div>
+          </ScrollToTopOnLinkClick>
+        </FadeInAnimation>
+
+        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
+          <ScrollToTopOnLinkClick to='/projects'>
+            <div className='container'>
+              <div className='row project-single'>
+                {/* outer-left */}
+                <div className='order'>
+                  04
+                </div>
+
+                {/* center */}
+                <div className='project-info'>
+                  <h2>NXR App</h2>
+                  <small>UI/UX / Design / Personal</small>
+                  <p>A user-centered designed mobile app for Jet-ski and Snowmobile rentals.</p>
+                </div>
+
+                {/* outer-right */}
+                <div className='arrow-link'>
+                  <img src={iconLong} alt='Icon arrow long right for next page links' />
+                </div>
+              </div>
+            </div>
+          </ScrollToTopOnLinkClick>
+        </FadeInAnimation>
+
+        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
+          <ScrollToTopOnLinkClick to='/projects'>
+            <div className='container'>
+              <div className='row project-single'>
+                {/* outer-left */}
+                <div className='order'>
+                  05
+                </div>
+
+                {/* center */}
+                <div className='project-info'>
+                  <h2>PlusRoom App</h2>
+                  <small>UI/UX / Design / Personal</small>
+                  <p>An intuitive mobile app designed for students providing interactive learning experiences.</p>
+                </div>
+
+                {/* outer-right */}
+                <div className='arrow-link'>
+                  <img src={iconLong} alt='Icon arrow long right for next page links' />
+                </div>
+              </div>
+            </div>
+          </ScrollToTopOnLinkClick>
+        </FadeInAnimation>
       </div>
     </div>
   );
