@@ -1,3 +1,3 @@
-# Weather forecast web app
+# Portfolio react.js
 
-A web app that displays current weather data for a specified location.
+I rebuilt my portfolio using React.JS and GSAP
