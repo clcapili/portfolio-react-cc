@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import ScrollToTopOnLinkClick from './../../components/ScrollToTopOnLinkClick';
+import FadeInAnimation from './../../components/FadeInAnimation';
 
 import weatherApiImg1 from './../../assets/img/project-weatherapi-1.png';
 import weatherApiImg2 from './../../assets/img/project-weatherapi-2.png';
@@ -9,8 +10,8 @@ export default function WeatherAPI() {
     <div className='pages project-single-template'>
       <section className='hero-text'>
         <div className='container'>
-          <h1>WeatherAPI</h1>
-          <span>Code  /  Personal</span>
+          <FadeInAnimation wrapperElement='h1' className='trigger' direction='down'>WeatherAPI</FadeInAnimation>
+          <FadeInAnimation wrapperElement='span' className='trigger' direction=''>Code  /  Personal</FadeInAnimation>
         </div>
       </section>
 
@@ -19,13 +20,13 @@ export default function WeatherAPI() {
           <div className='container'>
             <div className='row'>
               <div className='col-md-10'>
-                <p>A web app that displays current weather data for a specified location.</p>
+                <FadeInAnimation wrapperElement='p' className='trigger' direction=''>A web app that displays current weather data for a specified location.</FadeInAnimation>
               </div>
             </div>
           </div>
         </section>
 
-        <img src={weatherApiImg1} alt='WeatherAPI Mockup #1' />
+        <FadeInAnimation wrapperElement='img' src={weatherApiImg1} alt='Weather API Mockup #1' className='trigger' direction=''></FadeInAnimation>
         
         <section className='project-summary'>
           <div className='container'>
@@ -33,12 +34,12 @@ export default function WeatherAPI() {
               <div className='col-lg-8'>
                 <div className='challenge'>
                   <h5>Challenge</h5>
-                  <p>Make a web page that incorporates ONE Rest API call</p>
+                  <FadeInAnimation wrapperElement='p' className='trigger' direction='up'>Make a web page that incorporates ONE Rest API call</FadeInAnimation>
                 </div>
 
                 <div className='solution'>
                   <h5>Solution</h5>
-                  <p>I utilized the <Link to='https://www.weatherapi.com/docs/' target='_blank' className='link-hover'>WeatherAPI</Link> to develop a dynamic web page that displays real-time weather information.</p>
+                  <FadeInAnimation wrapperElement='p' className='trigger' direction='up'>I utilized the <Link to='https://www.weatherapi.com/docs/' target='_blank' className='link-hover'>WeatherAPI</Link> to develop a dynamic web page that displays real-time weather information.</FadeInAnimation>
                 </div>
               </div>
 
@@ -71,7 +72,7 @@ export default function WeatherAPI() {
           </div>
         </section>
 
-        <img src={weatherApiImg2} alt='Weather API Mockup #2' />
+        <FadeInAnimation wrapperElement='img' src={weatherApiImg2} alt='Weather API Mockup #1' className='trigger' direction=''></FadeInAnimation>
 
         <section className='pager'>
           <div className='container'>
