@@ -339,6 +339,11 @@ footer h6 {
   align-items: flex-end;
 }
 
+.hero-column .description p {
+  opacity: 0;
+  transform: translate(0, 0);
+}
+
 .hero-text {
   padding: 7rem 0;
   border-bottom: 1px solid #000;
@@ -351,6 +356,7 @@ footer h6 {
 }
 
 .bottom-link h2 {
+  font-family: 'AvenirLtStdMedium', Arial, sans-serif;
   margin-right: 40px;
 }
 
@@ -359,9 +365,11 @@ footer h6 {
 }
 
 /* home */
-.home h2 {
+.home .hero-column h2 {
   font-family: 'AvenirLtStdMedium', Arial, sans-serif;
   margin-bottom: 30px;
+  opacity: 0;
+  transform: translate(0, -200px);
 }
 
 .home .row {
@@ -379,6 +387,8 @@ footer h6 {
 /* about */
 .about h4 {
   font-family: 'AvenirLtStdMedium', Arial, sans-serif;
+  opacity: 0;
+  transform: translate(0, 0);
 }
 
 .about h4 span {
@@ -405,6 +415,11 @@ footer h6 {
   margin-bottom: 10px;
 }
 
+.about .about-me .skillset {
+  opacity: 0;
+  transform: translate(-200px, 0);
+}
+
 .about .about-me .skillset:not(:last-child) {
   margin-bottom: 30px;
   padding-bottom: 30px;
@@ -418,6 +433,11 @@ footer h6 {
 
 .about .about-me .skillset ul li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.about .about-me p {
+  opacity: 0;
+  transform: translate(0, 200px);
 }
 
 /* projects - dark theme */
@@ -621,9 +641,12 @@ body.projects-layout footer {
 /* featured project @ home */
 .featured-project {
   margin-bottom: 60px;
+  opacity: 0;
+  transform: translate(0, 200px);
 }
 
 .featured-project .project-details {
+  width: 100%;
   display: inline-flex;
   flex-direction: column-reverse;
   justify-content: space-between;

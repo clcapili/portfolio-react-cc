@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import FadeInAnimation from './../components/FadeInAnimation';
+
 // images
 import weatherApiImg from './../assets/img/project-weatherapi.jpg';
 import responsiveGridImg from './../assets/img/project-responsivegrid.jpg';
@@ -16,20 +18,25 @@ export default function Home() {
       <div className='container'>
         <section className='hero-column'>
           <div className='row'>
-            <div className='col-md-7'>
-              <h2>I design &amp; <span>build products.</span></h2>
-            </div>
-            <div className='col-md-5'>
-              <div className='description'>
-                <p>My expertise includes full-stack development, responsive design, CMS and RestAPI implementation, and intuitive and user-centered design.</p>
+              <div className='col-md-7'>
+                <FadeInAnimation wrapperElement='h2' className='trigger' direction='down'>
+                  I design &amp; <span>build products.</span>
+                </FadeInAnimation>
               </div>
-            </div>
+            
+              <div className='col-md-5'>
+                <div className='description'>
+                  <FadeInAnimation wrapperElement='p' className='trigger' direction='up'>
+                    My expertise includes full-stack development, responsive design, CMS and RestAPI implementation, and intuitive and user-centered design.
+                  </FadeInAnimation>
+                </div>
+              </div>
           </div>
         </section>
 
         <section className='row featured-projects'>
           <div className='col-md-5'>
-            <div className='featured-project'>
+            <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
               <Link to='/projects/weather-api'>
                 <img src={weatherApiImg} className='project-img' alt='WeatherAPI project using RestAPI' />
 
@@ -44,11 +51,11 @@ export default function Home() {
                 
                 <p>A web app that displays current weather data for a specified location.</p>
               </Link>
-            </div>
+            </FadeInAnimation>
           </div>
 
           <div className='col-md-7'>
-            <div className='featured-project'>
+            <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
               <Link to='/'>
                 <img src={responsiveGridImg} className='project-img' alt='Responsive Page project using CSS Grid' />
 
@@ -63,13 +70,13 @@ export default function Home() {
                 
                 <p>A web design which I utilized the CSS Grid system to create a flexible and responsive layout for different screen sizes and devices</p>
               </Link>
-            </div>
+            </FadeInAnimation>
           </div>
         </section>
 
         <section className='row'>
           <div className='col-md-7'>
-            <div className='featured-project'>
+            <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
               <Link to='/'>
                 <img src={nxrImg} className='project-img' alt='Northern Xscape Rentals App UI/UX project' />
 
@@ -84,11 +91,11 @@ export default function Home() {
                 
                 <p>A user-centered designed mobile app for Jet-ski and Snowmobile rentals.</p>
               </Link>
-            </div>
+            </FadeInAnimation>
           </div>
 
           <div className='col-md-5'>
-            <div className='featured-project'>
+            <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
               <Link to='/'>
                 <img src={plusroomImg} className='project-img' alt='PlusRoom App UI/UX project' />
 
@@ -103,7 +110,7 @@ export default function Home() {
                 
                 <p>An intuitive mobile app designed for students providing interactive learning experiences.</p>
               </Link>
-            </div>
+            </FadeInAnimation>
           </div>
         </section>
 
