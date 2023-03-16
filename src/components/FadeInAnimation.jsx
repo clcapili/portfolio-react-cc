@@ -33,7 +33,7 @@ const FadeInAnimation = ({
   useEffect(() => {
     const triggers = document.querySelectorAll('.trigger');
     triggers.forEach((element, i) => {
-      let isEven = i % 2 == 0;
+      let isEven = i % 2 === 0;
 
       gsap.to(element, {
         duration: 1,
