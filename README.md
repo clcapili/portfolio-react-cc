@@ -1,3 +1,3 @@
-# First React App
+# Portfolio react.js
 
-For educational purposes only.
+I rebuilt my portfolio using React.JS and GSAP
