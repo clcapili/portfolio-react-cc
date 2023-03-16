@@ -1,6 +1,8 @@
 import { React, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 
+import FadeInAnimation from './../components/FadeInAnimation';
+
 import iconLong from './../assets/img/icon-arrow-long-right.svg';
 
 export default function Projects() {
@@ -15,12 +17,14 @@ export default function Projects() {
     <div className='pages projects'>
       <section className='hero-text'>
         <div className='container'>
-          <h3>Crafting code and visual personalities for digital brands.</h3>
+          <FadeInAnimation wrapperElement='h3' className='trigger' direction='up'>
+            Crafting code and visual personalities for digital brands.
+          </FadeInAnimation>
         </div>
       </section>
 
       <div className='projects-archive'>
-        <div className='project'>
+        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
           <Link to='/projects/astrology-icons'>
             <div className='container'>
               <div className='row project-single'>
@@ -43,9 +47,9 @@ export default function Projects() {
               </div>
             </div>
           </Link>
-        </div>
+        </FadeInAnimation>
 
-        <div className='project'>
+        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
           <Link to='/projects/weather-api'>
             <div className='container'>
               <div className='row project-single'>
@@ -68,7 +72,7 @@ export default function Projects() {
               </div>
             </div>
           </Link>
-        </div>
+        </FadeInAnimation>
       </div>
     </div>
   );

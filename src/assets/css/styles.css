@@ -480,6 +480,11 @@ body.projects-layout footer {
 }
 
 /* projects archive */
+.projects-archive .project {
+  opacity: 0;
+  transform: translate(-200px, 0);
+}
+
 .projects-archive .project:not(:last-child) {
   border-bottom: 1px solid #fff;
 }
@@ -541,6 +546,8 @@ body.projects-layout footer {
 
 .projects h3 {
   font-family: 'AvenirLtStdMedium', Arial, sans-serif;
+  opacity: 0;
+  transform: translate(0, 200px);
 }
 
 /* project single template */
