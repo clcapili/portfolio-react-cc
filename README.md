@@ -1,3 +1,3 @@
-# First React App
+# Weather forecast web app
 
-For educational purposes only.
+A web app that displays current weather data for a specified location.
