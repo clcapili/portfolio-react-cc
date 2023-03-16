@@ -1,3 +1,5 @@
+import ScrollToTopOnLinkClick from './../../components/ScrollToTopOnLinkClick';
+
 import astrologyIcon1 from './../../assets/img/astrology-icons/astrology-icons-1.jpg';
 import astrologyIcon2 from './../../assets/img/astrology-icons/astrology-icons-2.jpg';
 import astrologyIcon3 from './../../assets/img/astrology-icons/astrology-icons-3.jpg';
@@ -12,7 +14,6 @@ import astrologyIcon11 from './../../assets/img/astrology-icons/astrology-icons-
 import astrologyIcon12 from './../../assets/img/astrology-icons/astrology-icons-12.jpg';
 import astrologyIcon13 from './../../assets/img/astrology-icons/astrology-icons-13.jpg';
 import astrologyIcon14 from './../../assets/img/astrology-icons/astrology-icons-14.jpg';
-import { Link } from 'react-router-dom';
 
 export default function AstrologyIcons() {
   return (
@@ -190,10 +191,10 @@ export default function AstrologyIcons() {
 
         <section className='pager'>
           <div className='container'>
-            <Link to='/projects' className='next'>
+            <ScrollToTopOnLinkClick to='/projects/weather-api' className='next'>
               <h4>next project</h4>
-              <h1>PlusRoom App</h1>
-            </Link>
+              <h1>WeatherAPI</h1>
+            </ScrollToTopOnLinkClick>
           </div>
         </section>
       </div>

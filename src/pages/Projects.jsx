@@ -1,5 +1,6 @@
 import { React, useEffect } from 'react'
 import { Link } from 'react-router-dom';
+import ScrollToTopOnLinkClick from './../components/ScrollToTopOnLinkClick';
 
 import FadeInAnimation from './../components/FadeInAnimation';
 
@@ -25,7 +26,7 @@ export default function Projects() {
 
       <div className='projects-archive'>
         <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
-          <Link to='/projects/astrology-icons'>
+          <ScrollToTopOnLinkClick to='/projects/astrology-icons'>
             <div className='container'>
               <div className='row project-single'>
                 {/* outer-left */}
@@ -46,11 +47,11 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-          </Link>
+          </ScrollToTopOnLinkClick>
         </FadeInAnimation>
 
         <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
-          <Link to='/projects/weather-api'>
+          <ScrollToTopOnLinkClick to='/projects/weather-api'>
             <div className='container'>
               <div className='row project-single'>
                 {/* outer-left */}
@@ -71,7 +72,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-          </Link>
+          </ScrollToTopOnLinkClick>
         </FadeInAnimation>
       </div>
     </div>

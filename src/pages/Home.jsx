@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import FadeInAnimation from './../components/FadeInAnimation';
+import ScrollToTopOnLinkClick from './../components/ScrollToTopOnLinkClick';
 
 // images
 import weatherApiImg from './../assets/img/project-weatherapi.jpg';
@@ -37,7 +37,7 @@ export default function Home() {
         <section className='row featured-projects'>
           <div className='col-md-5'>
             <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
-              <Link to='/projects/weather-api'>
+              <ScrollToTopOnLinkClick to='/projects/weather-api'>
                 <img src={weatherApiImg} className='project-img' alt='WeatherAPI project using RestAPI' />
 
                 <div className='project-details'>
@@ -50,13 +50,13 @@ export default function Home() {
                 </div>
                 
                 <p>A web app that displays current weather data for a specified location.</p>
-              </Link>
+              </ScrollToTopOnLinkClick>
             </FadeInAnimation>
           </div>
 
           <div className='col-md-7'>
             <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
-              <Link to='/'>
+              <ScrollToTopOnLinkClick to='/'>
                 <img src={responsiveGridImg} className='project-img' alt='Responsive Page project using CSS Grid' />
 
                 <div className='project-details'>
@@ -69,7 +69,7 @@ export default function Home() {
                 </div>
                 
                 <p>A web design which I utilized the CSS Grid system to create a flexible and responsive layout for different screen sizes and devices</p>
-              </Link>
+              </ScrollToTopOnLinkClick>
             </FadeInAnimation>
           </div>
         </section>
@@ -77,7 +77,7 @@ export default function Home() {
         <section className='row'>
           <div className='col-md-7'>
             <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
-              <Link to='/'>
+              <ScrollToTopOnLinkClick to='/'>
                 <img src={nxrImg} className='project-img' alt='Northern Xscape Rentals App UI/UX project' />
 
                 <div className='project-details'>
@@ -90,13 +90,13 @@ export default function Home() {
                 </div>
                 
                 <p>A user-centered designed mobile app for Jet-ski and Snowmobile rentals.</p>
-              </Link>
+              </ScrollToTopOnLinkClick>
             </FadeInAnimation>
           </div>
 
           <div className='col-md-5'>
             <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
-              <Link to='/'>
+              <ScrollToTopOnLinkClick to='/'>
                 <img src={plusroomImg} className='project-img' alt='PlusRoom App UI/UX project' />
 
                 <div className='project-details'>
@@ -109,16 +109,16 @@ export default function Home() {
                 </div>
                 
                 <p>An intuitive mobile app designed for students providing interactive learning experiences.</p>
-              </Link>
+              </ScrollToTopOnLinkClick>
             </FadeInAnimation>
           </div>
         </section>
 
         <section className='row'>
-          <Link to='/projects' className='bottom-link'>
+          <ScrollToTopOnLinkClick to='/projects' className='bottom-link'>
             <h2>View All Projects</h2>
             <img src={iconLong} alt='Icon arrow long right for next page links' />
-          </Link>
+          </ScrollToTopOnLinkClick>
         </section>
       </div>
     </div>
