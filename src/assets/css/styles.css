@@ -1,5 +1,6 @@
 /* mobile-first */
 ::selection { background: #B9FF1F; }
+body.projects-layout ::selection { color: #000; }
 body { font-family: 'AvenirLtStdLight', Arial, sans-serif; }
 h1, h2, h3, h4, h5, h6 { line-height: 1.1; }
 
