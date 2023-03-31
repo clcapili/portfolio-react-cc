@@ -1,12 +1,14 @@
 import FadeInAnimation from './../components/FadeInAnimation';
 
 export default function About() {
+  let experience = (new Date().getFullYear()) - 2017;
+
   return (
     <div className='pages about'>
       <section className='hero-text'>
         <div className='container'>
           <FadeInAnimation wrapperElement='h4' className='trigger' direction=''>
-            I'm a Toronto based Web Developer and Interactive Designer <span>with 6+ years of experience in developing solid, scalable digital products with excellent user experiences.</span>
+            I'm a Toronto based Web Developer and Interactive Designer <span>with {experience}+ years of experience in developing solid, scalable digital products with excellent user experiences.</span>
           </FadeInAnimation>
         </div>
       </section>
