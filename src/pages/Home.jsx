@@ -48,7 +48,7 @@ export default function Home() {
                   <small>Code / Personal</small>
                 </div>
                 
-                <p>A web app that displays current weather data for a specified location.</p>
+                <p>A web app that displays current weather data for a specified location</p>
               </ScrollToTopOnLinkClick>
             </FadeInAnimation>
           </div>
@@ -88,7 +88,7 @@ export default function Home() {
                   <small>UI/UX / Design / Personal</small>
                 </div>
                 
-                <p>A user-centered designed mobile app for Jet-ski and Snowmobile rentals.</p>
+                <p>A user-centered designed mobile app for Jet-ski and Snowmobile rentals</p>
               </ScrollToTopOnLinkClick>
             </FadeInAnimation>
           </div>
@@ -107,7 +107,7 @@ export default function Home() {
                   <small>UI/UX / Design / Personal</small>
                 </div>
                 
-                <p>An intuitive mobile app designed for students providing interactive learning experiences.</p>
+                <p>An intuitive mobile app designed for students providing interactive learning experiences</p>
               </ScrollToTopOnLinkClick>
             </FadeInAnimation>
           </div>

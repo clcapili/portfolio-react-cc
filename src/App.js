@@ -13,6 +13,7 @@ import MovieList from './pages/projects/MovieList';
 import BootstrapWebPage from './pages/projects/BootstrapWebPage';
 import AstrologyIcons from './pages/projects/AstrologyIcons';
 import GridWebPage from './pages/projects/GridWebPage';
+import NXRApp from './pages/projects/NXRApp';
 import PlusRoomApp from './pages/projects/PlusRoomApp';
 
 import Contact from './pages/Contact';
@@ -74,6 +75,12 @@ export default function App() {
             path='/projects/grid-web-page' 
             element={
               <GridWebPage />
+            }
+          />
+          <Route
+            path='/projects/nxr-app' 
+            element={
+              <NXRApp />
             }
           />
           <Route
