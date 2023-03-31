@@ -10,6 +10,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import WeatherAPI from './pages/projects/WeatherAPI';
 import MovieList from './pages/projects/MovieList';
+import BootstrapWebPage from './pages/projects/BootstrapWebPage';
 import AstrologyIcons from './pages/projects/AstrologyIcons';
 import PlusRoomApp from './pages/projects/PlusRoomApp';
 
@@ -54,6 +55,12 @@ export default function App() {
             path='/projects/movie-list' 
             element={
               <MovieList />
+            }
+          />
+          <Route
+            path='/projects/bootstrap-web-page' 
+            element={
+              <BootstrapWebPage />
             }
           />
           <Route
