@@ -194,9 +194,9 @@ export default function AstrologyIcons() {
 
         <section className='pager'>
           <div className='container'>
-            <ScrollToTopOnLinkClick to='/projects/weather-api' className='next'>
+            <ScrollToTopOnLinkClick to='/projects/grid-web-page' className='next'>
               <h4>next project</h4>
-              <h1>WeatherAPI</h1>
+              <h1>Grid Web Page</h1>
             </ScrollToTopOnLinkClick>
           </div>
         </section>

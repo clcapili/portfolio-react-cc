@@ -77,9 +77,9 @@ export default function NXRApp() {
 
         <section className='pager'>
           <div className='container'>
-            <ScrollToTopOnLinkClick to='/projects/weather-api' className='next'>
+            <ScrollToTopOnLinkClick to='/projects/plusroom-app' className='next'>
               <h4>next project</h4>
-              <h1>WeatherAPI</h1>
+              <h1>PlusRoom App</h1>
             </ScrollToTopOnLinkClick>
           </div>
         </section>
