@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import FadeInAnimation from './../components/FadeInAnimation';
+import ScrollToTopOnLinkClick from './../components/ScrollToTopOnLinkClick';
 
 // import images
 import displayPhoto from './../assets/img/display-photo.jpg';
@@ -61,7 +62,7 @@ export default function Contact() {
               </form>
               {/* form end */}
 
-              <div className='legal'>By submitting this form you consent to data processing and communication in accordance with the <Link to='/' className='link-hover'> privacy policy</Link>.</div>
+              <div className='legal'>By submitting this form you consent to data processing and communication in accordance with the <ScrollToTopOnLinkClick to='/privacy-policy' className='link-hover'> privacy policy</ScrollToTopOnLinkClick>.</div>
             </div>
 
             <div className='col-lg-4'>

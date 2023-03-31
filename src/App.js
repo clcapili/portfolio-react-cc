@@ -13,6 +13,7 @@ import WeatherAPI from './pages/projects/WeatherAPI';
 
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 import './assets/css/styles.css';
 import './assets/css/fonts.css';
@@ -68,6 +69,14 @@ export default function App() {
             <Contact />
           }
         />
+        
+        <Route 
+          path='/privacy-policy' 
+          element={
+            <PrivacyPolicy />
+          }
+        />
+
         <Route
           path='*' 
           element={

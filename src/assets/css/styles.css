@@ -455,6 +455,10 @@ body.projects-layout header .header-desktop nav a.active {
   color: #B9FF1F;
 }
 
+body.projects-layout header .header-desktop nav a:hover {
+  color: #fff;
+}
+
 body.projects-layout .header-mobile {
   background-color: #000;
   border-color: #fff;
@@ -466,6 +470,14 @@ body.projects-layout .header-mobile .hamburger-menu .icon-bar {
 
 body.projects-layout a {
   color: #fff;
+}
+
+body.projects-layout .footer-wrapper a:hover { 
+  color: #000; 
+}
+
+body.projects-layout .footer-wrapper a:hover img {
+  filter: none;
 }
 
 body.projects-layout img {
@@ -870,6 +882,10 @@ body.projects-layout footer {
 
 .not-found .back-link a img {
   width: 10%;
+}
+
+.privacy-policy .policy {
+  padding: 80px 0;
 }
 
 /* desktop */
