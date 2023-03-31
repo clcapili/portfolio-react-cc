@@ -62,7 +62,7 @@ export default function Projects() {
                 <div className='project-info'>
                   <h2>Movie List</h2>
                   <small>Code / Personal</small>
-                  <p>DESCRIPTION HERE</p>
+                  <p>A web page integrated React state into a movie rating feature, allowing users to conveniently rate and provide feedback on movies.</p>
                 </div>
 
                 {/* outer-right */}

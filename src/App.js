@@ -8,8 +8,9 @@ import About from './pages/About';
 
 // projects
 import Projects from './pages/Projects';
-import AstrologyIcons from './pages/projects/AstrologyIcons';
 import WeatherAPI from './pages/projects/WeatherAPI';
+import MovieList from './pages/projects/MovieList';
+import AstrologyIcons from './pages/projects/AstrologyIcons';
 import PlusRoomApp from './pages/projects/PlusRoomApp';
 
 import Contact from './pages/Contact';
@@ -47,6 +48,12 @@ export default function App() {
             index
             element={
               <Projects />
+            }
+          />
+          <Route
+            path='/projects/movie-list' 
+            element={
+              <MovieList />
             }
           />
           <Route
