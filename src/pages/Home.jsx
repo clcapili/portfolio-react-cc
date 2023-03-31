@@ -55,7 +55,7 @@ export default function Home() {
 
           <div className='col-md-7'>
             <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
-              <ScrollToTopOnLinkClick to='/'>
+              <ScrollToTopOnLinkClick to='/projects/grid-web-page'>
                 <img src={responsiveGridImg} className='project-img' alt='Responsive Page project using CSS Grid' />
 
                 <div className='project-details'>

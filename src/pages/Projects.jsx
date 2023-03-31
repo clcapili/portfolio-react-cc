@@ -125,7 +125,7 @@ export default function Projects() {
         </FadeInAnimation>
 
         <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
-          <ScrollToTopOnLinkClick to='/projects'>
+          <ScrollToTopOnLinkClick to='/projects/grid-web-page'>
             <div className='container'>
               <div className='row project-single'>
                 {/* outer-left */}
@@ -136,7 +136,7 @@ export default function Projects() {
                 {/* center */}
                 <div className='project-info'>
                   <h2>Grid Web Page</h2>
-                  <small>UI / Design / Code / Personal</small>
+                  <small>Code  /  Design  /  Personal</small>
                   <p>A web design which I utilized the CSS Grid system to create a flexible and responsive layout for different screen sizes and devices</p>
                 </div>
 

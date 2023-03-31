@@ -12,6 +12,7 @@ import WeatherAPI from './pages/projects/WeatherAPI';
 import MovieList from './pages/projects/MovieList';
 import BootstrapWebPage from './pages/projects/BootstrapWebPage';
 import AstrologyIcons from './pages/projects/AstrologyIcons';
+import GridWebPage from './pages/projects/GridWebPage';
 import PlusRoomApp from './pages/projects/PlusRoomApp';
 
 import Contact from './pages/Contact';
@@ -67,6 +68,12 @@ export default function App() {
             path='/projects/astrology-icons' 
             element={
               <AstrologyIcons />
+            }
+          />
+          <Route
+            path='/projects/grid-web-page' 
+            element={
+              <GridWebPage />
             }
           />
           <Route
