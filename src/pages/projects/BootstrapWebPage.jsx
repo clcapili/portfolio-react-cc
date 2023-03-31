@@ -77,7 +77,7 @@ export default function BootstrapWebPage() {
 
         <section className='pager'>
           <div className='container'>
-            <ScrollToTopOnLinkClick to='/projects/bootstrap-web-page' className='next'>
+            <ScrollToTopOnLinkClick to='/projects/astrology-icons' className='next'>
               <h4>next project</h4>
               <h1>Astrology Icons</h1>
             </ScrollToTopOnLinkClick>

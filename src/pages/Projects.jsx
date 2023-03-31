@@ -87,7 +87,7 @@ export default function Projects() {
                 <div className='project-info'>
                   <h2>Bootstrap Web Page</h2>
                   <small>Code / Personal</small>
-                  <p>DESCRIPTION HERE</p>
+                  <p>A responsive web page using Bootstrap that enhances the user experience across various devices</p>
                 </div>
 
                 {/* outer-right */}
