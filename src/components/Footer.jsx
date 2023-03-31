@@ -12,13 +12,13 @@ export default function Footer() {
         <div className='row footer-wrapper'>
           <div className='footer-col footer-block'>
 
-            <h6>© 2023 All Rights Reserved</h6>
+            <h6>© {(new Date().getFullYear())} All Rights Reserved</h6>
 
           </div>
 
           <div className='footer-col footer-block-sm'>
 
-            <h6>© 2023 All Rights Reserved</h6>
+            <h6>© {(new Date().getFullYear())} All Rights Reserved</h6>
 
           </div>
 
