@@ -41,7 +41,7 @@ export default function PlusRoomApp() {
 
                 <div className='solution'>
                   <h5>Solution</h5>
-                  <FadeInAnimation wrapperElement='p' className='trigger' direction='up'>We created a seamless and intuitive UI/UX design for a comprehensive mobile application that offers virtual learning opportunities to students. <Link to='https://www.behance.net/gallery/152249365/PlusRoom-Meet-Learn-Mobile-Application' target={'_blank'} className='link-hover'>Check it out on Behance</Link></FadeInAnimation>
+                  <FadeInAnimation wrapperElement='p' className='trigger' direction='up'>We created a seamless and intuitive UI/UX design for a comprehensive mobile application that offers virtual learning opportunities to students. Check it out on <Link to='https://www.behance.net/gallery/152249365/PlusRoom-Meet-Learn-Mobile-Application' target={'_blank'} className='link-hover'>Behance</Link>.</FadeInAnimation>
                 </div>
               </div>
 
