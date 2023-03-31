@@ -12,7 +12,7 @@ export default function WeatherAPI() {
       <section className='hero-text'>
         <div className='container'>
           <FadeInAnimation wrapperElement='h1' className='trigger' direction='down'>WeatherAPI</FadeInAnimation>
-          <FadeInAnimation wrapperElement='span' className='trigger' direction=''>Code  /  Personal</FadeInAnimation>
+          <FadeInAnimation wrapperElement='span' className='trigger' direction=''>Code  /  Design  /  Personal</FadeInAnimation>
         </div>
       </section>
 

@@ -36,7 +36,7 @@ export default function Projects() {
                 {/* center */}
                 <div className='project-info'>
                   <h2>WeatherAPI</h2>
-                  <small>Code / Personal</small>
+                  <small>Code / Design / Personal</small>
                   <p>A web app that displays current weather data for a specified location.</p>
                 </div>
 
@@ -61,7 +61,7 @@ export default function Projects() {
                 {/* center */}
                 <div className='project-info'>
                   <h2>Movie List</h2>
-                  <small>Code / Personal</small>
+                  <small>Code / Design / Personal</small>
                   <p>A web page integrated React state into a movie rating feature, allowing users to conveniently rate and provide feedback on movies.</p>
                 </div>
 
