@@ -25,37 +25,12 @@ export default function Projects() {
 
       <div className='projects-archive'>
         <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
-          <ScrollToTopOnLinkClick to='/projects/astrology-icons'>
-            <div className='container'>
-              <div className='row project-single'>
-                {/* outer-left */}
-                <div className='order'>
-                  01
-                </div>
-
-                {/* center */}
-                <div className='project-info'>
-                  <h2>Astrology Icons</h2>
-                  <small>Illustration / Design / Personal</small>
-                  <p>Collaboration project where we design six unique icons with minimalist and consistent design style.</p>
-                </div>
-
-                {/* outer-right */}
-                <div className='arrow-link'>
-                  <img src={iconLong} alt='Icon arrow long right for next page links' />
-                </div>
-              </div>
-            </div>
-          </ScrollToTopOnLinkClick>
-        </FadeInAnimation>
-
-        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
           <ScrollToTopOnLinkClick to='/projects/weather-api'>
             <div className='container'>
               <div className='row project-single'>
                 {/* outer-left */}
                 <div className='order'>
-                  02
+                  01
                 </div>
 
                 {/* center */}
@@ -75,7 +50,32 @@ export default function Projects() {
         </FadeInAnimation>
 
         <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
-          <ScrollToTopOnLinkClick to='/projects'>
+          <ScrollToTopOnLinkClick to='/projects/movie-list'>
+            <div className='container'>
+              <div className='row project-single'>
+                {/* outer-left */}
+                <div className='order'>
+                  02
+                </div>
+
+                {/* center */}
+                <div className='project-info'>
+                  <h2>Movie List</h2>
+                  <small>Code / Personal</small>
+                  <p>DESCRIPTION HERE</p>
+                </div>
+
+                {/* outer-right */}
+                <div className='arrow-link'>
+                  <img src={iconLong} alt='Icon arrow long right for next page links' />
+                </div>
+              </div>
+            </div>
+          </ScrollToTopOnLinkClick>
+        </FadeInAnimation>
+
+        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
+          <ScrollToTopOnLinkClick to='/projects/bootstrap-web-page'>
             <div className='container'>
               <div className='row project-single'>
                 {/* outer-left */}
@@ -85,9 +85,34 @@ export default function Projects() {
 
                 {/* center */}
                 <div className='project-info'>
-                  <h2>Grid Responsive</h2>
-                  <small>UI / Design / Code / Personal</small>
-                  <p>A web design which I utilized the CSS Grid system to create a flexible and responsive layout for different screen sizes and devices</p>
+                  <h2>Bootstrap Web Page</h2>
+                  <small>Code / Personal</small>
+                  <p>DESCRIPTION HERE</p>
+                </div>
+
+                {/* outer-right */}
+                <div className='arrow-link'>
+                  <img src={iconLong} alt='Icon arrow long right for next page links' />
+                </div>
+              </div>
+            </div>
+          </ScrollToTopOnLinkClick>
+        </FadeInAnimation>
+
+        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
+          <ScrollToTopOnLinkClick to='/projects/astrology-icons'>
+            <div className='container'>
+              <div className='row project-single'>
+                {/* outer-left */}
+                <div className='order'>
+                  04
+                </div>
+
+                {/* center */}
+                <div className='project-info'>
+                  <h2>Astrology Icons</h2>
+                  <small>Illustration / Design / Personal</small>
+                  <p>Collaboration project where we design six unique icons with minimalist and consistent design style.</p>
                 </div>
 
                 {/* outer-right */}
@@ -105,7 +130,32 @@ export default function Projects() {
               <div className='row project-single'>
                 {/* outer-left */}
                 <div className='order'>
-                  04
+                  05
+                </div>
+
+                {/* center */}
+                <div className='project-info'>
+                  <h2>Grid Web Page</h2>
+                  <small>UI / Design / Code / Personal</small>
+                  <p>A web design which I utilized the CSS Grid system to create a flexible and responsive layout for different screen sizes and devices</p>
+                </div>
+
+                {/* outer-right */}
+                <div className='arrow-link'>
+                  <img src={iconLong} alt='Icon arrow long right for next page links' />
+                </div>
+              </div>
+            </div>
+          </ScrollToTopOnLinkClick>
+        </FadeInAnimation>
+
+        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
+          <ScrollToTopOnLinkClick to='/projects/nxr-app'>
+            <div className='container'>
+              <div className='row project-single'>
+                {/* outer-left */}
+                <div className='order'>
+                  06
                 </div>
 
                 {/* center */}
@@ -125,12 +175,12 @@ export default function Projects() {
         </FadeInAnimation>
 
         <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
-          <ScrollToTopOnLinkClick to='/projects'>
+          <ScrollToTopOnLinkClick to='/projects/plusroom-app'>
             <div className='container'>
               <div className='row project-single'>
                 {/* outer-left */}
                 <div className='order'>
-                  05
+                  07
                 </div>
 
                 {/* center */}

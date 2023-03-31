@@ -78,9 +78,9 @@ export default function WeatherAPI() {
 
         <section className='pager'>
           <div className='container'>
-            <ScrollToTopOnLinkClick to='/projects' className='next'>
+            <ScrollToTopOnLinkClick to='/projects/movie-list' className='next'>
               <h4>next project</h4>
-              <h1>PlusRoom App</h1>
+              <h1>Movie List</h1>
             </ScrollToTopOnLinkClick>
           </div>
         </section>

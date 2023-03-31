@@ -60,7 +60,7 @@ export default function Home() {
 
                 <div className='project-details'>
                   <div className='project-name'>
-                    <h6>Grid Responsive Page</h6>
+                    <h6>Grid Web Page</h6>
                     <img src={icon} alt='Icon arrow up right for external links' />
                   </div>
 
@@ -81,7 +81,7 @@ export default function Home() {
 
                 <div className='project-details'>
                   <div className='project-name'>
-                    <h6>Northern Xscape Rentals App</h6>
+                    <h6>NXR App</h6>
                     <img src={icon} alt='Icon arrow up right for external links' />
                   </div>
 
@@ -95,7 +95,7 @@ export default function Home() {
 
           <div className='col-md-5'>
             <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
-              <ScrollToTopOnLinkClick to='/'>
+              <ScrollToTopOnLinkClick to='/projects/plusroom-app'>
                 <img src={plusroomImg} className='project-img' alt='PlusRoom App UI/UX project' />
 
                 <div className='project-details'>

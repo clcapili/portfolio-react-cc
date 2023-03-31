@@ -300,6 +300,7 @@ footer h6 {
 /* footer hover */
 .link-hover {
   position: relative;
+  display: inline-block;
 }
 
 .link-hover:before {

@@ -10,6 +10,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import AstrologyIcons from './pages/projects/AstrologyIcons';
 import WeatherAPI from './pages/projects/WeatherAPI';
+import PlusRoomApp from './pages/projects/PlusRoomApp';
 
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -58,6 +59,12 @@ export default function App() {
             path='/projects/weather-api' 
             element={
               <WeatherAPI />
+            }
+          />
+          <Route
+            path='/projects/plusroom-app' 
+            element={
+              <PlusRoomApp />
             }
           />
         </Route>
