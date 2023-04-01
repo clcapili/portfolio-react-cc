@@ -15,6 +15,7 @@ import AstrologyIcons from './pages/projects/AstrologyIcons';
 import GridWebPage from './pages/projects/GridWebPage';
 import NXRApp from './pages/projects/NXRApp';
 import PlusRoomApp from './pages/projects/PlusRoomApp';
+import PaseoWebsite from './pages/projects/PaseoWebsite';
 
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -93,6 +94,12 @@ export default function App() {
             path='/projects/plusroom-app' 
             element={
               <PlusRoomApp />
+            }
+          />
+          <Route
+            path='/projects/paseo-website' 
+            element={
+              <PaseoWebsite />
             }
           />
         </Route>

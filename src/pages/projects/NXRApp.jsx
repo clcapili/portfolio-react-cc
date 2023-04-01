@@ -27,7 +27,7 @@ export default function NXRApp() {
           </div>
         </section>
 
-        <FadeInAnimation wrapperElement='img' src={nxrAppImg1} alt='PlusRoom App Mockup #1' className='trigger' direction=''></FadeInAnimation>
+        <FadeInAnimation wrapperElement='img' src={nxrAppImg1} alt='NXR App Mockup #1' className='trigger' direction=''></FadeInAnimation>
         
         {/* project summary */}
         <section className='project-summary'>
@@ -73,7 +73,7 @@ export default function NXRApp() {
           </div>
         </section>
 
-        <FadeInAnimation wrapperElement='img' src={nxrAppImg2} alt='PlusRoom App Mockup #1' className='trigger' direction=''></FadeInAnimation>
+        <FadeInAnimation wrapperElement='img' src={nxrAppImg2} alt='NXR App Mockup #1' className='trigger' direction=''></FadeInAnimation>
 
         <section className='pager'>
           <div className='container'>

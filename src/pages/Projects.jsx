@@ -198,6 +198,31 @@ export default function Projects() {
             </div>
           </ScrollToTopOnLinkClick>
         </FadeInAnimation>
+
+        <FadeInAnimation wrapperElement='div' className='project trigger' direction='left'>
+          <ScrollToTopOnLinkClick to='/projects/paseo-website'>
+            <div className='container'>
+              <div className='row project-single'>
+                {/* outer-left */}
+                <div className='order'>
+                  08
+                </div>
+
+                {/* center */}
+                <div className='project-info'>
+                  <h2>Paseo Website</h2>
+                  <small>UI/UX / Design / Personal</small>
+                  <p>An intuitive mobile app designed for students providing interactive learning experiences</p>
+                </div>
+
+                {/* outer-right */}
+                <div className='arrow-link'>
+                  <img src={iconLong} alt='Icon arrow long right for next page links' />
+                </div>
+              </div>
+            </div>
+          </ScrollToTopOnLinkClick>
+        </FadeInAnimation>
       </div>
     </div>
   );
