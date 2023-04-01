@@ -19,6 +19,7 @@ import PaseoWebsite from './pages/projects/PaseoWebsite';
 
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import ThankYou from './pages/ThankYou';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
 import './assets/css/styles.css';
@@ -109,6 +110,13 @@ export default function App() {
           path='/contact' 
           element={
             <Contact />
+          }
+        />
+        
+        <Route 
+          path='/thank-you' 
+          element={
+            <ThankYou />
           }
         />
         

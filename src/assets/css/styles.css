@@ -760,6 +760,7 @@ body.projects-layout footer {
   padding-top: 10px;
   border: none;
   margin-left: 48px;
+  width: -webkit-fill-available;
 }
 
 .contact .contact-wrapper form .submit-button input[type="submit"] {
@@ -832,12 +833,14 @@ body.projects-layout footer {
   margin-right: 20px;
 }
 
-/* not found */
-.not-found .hero-text {
+/* not found & thank you */
+.not-found .hero-text,
+.thank-you .hero-text {
   border-bottom: none;
 }
 
-.not-found .hero-text .col-6 {
+.not-found .hero-text .col-6,
+.thank-you .hero-text .col-6 {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -845,13 +848,15 @@ body.projects-layout footer {
   margin-bottom: 60px;
 }
 
-.not-found .hero-text h1 {
+.not-found .hero-text h1,
+.thank-you .hero-text h1 {
   font-family: 'RajdhaniBold', Arial, sans-serif;
   opacity: 0;
   transform: translate(0, -200px);
 }
 
-.not-found .hero-text .back-link a {
+.not-found .hero-text .back-link a,
+.thank-you .hero-text .back-link a {
   position: relative;
   right: 0;
   transition: 0.3s;
@@ -860,28 +865,33 @@ body.projects-layout footer {
   justify-content: center;
 }
 
-.not-found .hero-text .back-link a:hover {
+.not-found .hero-text .back-link a:hover,
+.thank-you .hero-text .back-link a:hover {
   position: relative;
   right: 20px;
   transition: 0.3s;
 }
 
-.not-found .hero-text p {
+.not-found .hero-text p,
+.thank-you .hero-text p {
   opacity: 0;
   transform: translate(0, 0);
 }
 
-.not-found .hero-text .computer-face {
+.not-found .hero-text .computer-face,
+.thank-you .hero-text .computer-face {
   opacity: 0;
   transform: translate(0, 0);
 }
 
-.not-found .back-link {
+.not-found .back-link,
+.thank-you .back-link {
   opacity: 0;
   transform: translate(0, 200px);
 }
 
-.not-found .back-link a img {
+.not-found .back-link a img,
+.thank-you .back-link a img {
   width: 10%;
 }
 
@@ -987,7 +997,8 @@ body.projects-layout footer {
     margin-bottom: 0;
   }
 
-  .not-found .hero-text .col-6 {
+  .not-found .hero-text .col-6,
+  .thank-you .hero-text .col-6 {
     margin-bottom: 0;
   }
 }

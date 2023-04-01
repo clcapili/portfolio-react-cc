@@ -1,4 +1,6 @@
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+
 import FadeInAnimation from './../components/FadeInAnimation';
 import ScrollToTopOnLinkClick from './../components/ScrollToTopOnLinkClick';
 
@@ -10,6 +12,45 @@ import behanceIcon from './../assets/img/icon-behance.svg';
 import linkedinIcon from './../assets/img/icon-linkedin.svg';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    emailAddress: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await fetch('https://formspree.io/f/xeqwrzzo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      console.log(data); // handle the response data
+      // reset form fields
+      setFormData({
+        fullName: '',
+        emailAddress: '',
+        phone: '',
+        message: '',
+      });
+      console.log('Form submission complete!');
+      // redirect to thank you page after 3 seconds
+      setTimeout(() => {
+        window.location.href = '/thank-you';
+      }, 3000);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
   return (
     <div className='pages contact'>
       <section className='hero-text'>
@@ -35,25 +76,57 @@ export default function Contact() {
           <div className='row form-wrapper'>
             <div className='col-lg-8'>
               {/* form start */}
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className='form-fields'>
-                  <label htmlFor='full-name'><span>01</span>Full name*</label>
-                  <input type='text' id='full-name' name='full-name' placeholder='Your full name' required />
+                  <label htmlFor='fullName'><span>01</span>Full name*</label>
+                  <input 
+                    type='text' 
+                    id='fullName' 
+                    name='fullName' 
+                    value={formData.fullName} 
+                    onChange={handleInputChange} 
+                    placeholder='Your full name' 
+                    required
+                  />
                 </div>
 
                 <div className='form-fields'>
-                  <label htmlFor='email-address'><span>02</span>Email address*</label>
-                  <input type='email' id='email-address' name='email-address' placeholder='Your email address' required />
+                  <label htmlFor='emailAddress'><span>02</span>Email address*</label>
+                  <input 
+                    type='email' 
+                    id='emailAddress' 
+                    name='emailAddress' 
+                    value={formData.emailAddress} 
+                    onChange={handleInputChange} 
+                    placeholder='Your email address' 
+                    required
+                  />
                 </div>
 
                 <div className='form-fields'>
                   <label htmlFor='phone'><span>03</span>Phone number*</label>
-                  <input  type='tel' id='phone' name='phone' placeholder='Your phone number' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}' required />
+                  <input 
+                    type='tel' 
+                    id='phone' 
+                    name='phone' 
+                    value={formData.phone} 
+                    onChange={handleInputChange} 
+                    placeholder='123-456-7890' 
+                    pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}' 
+                    required
+                  />
                 </div>
 
                 <div className='form-fields'>
                   <label htmlFor='message'><span>04</span>Message</label>
-                  <input type='text' id='message' name='message' placeholder='(Optional)' />
+                  <input
+                    type='text' 
+                    id='message' 
+                    name='message' 
+                    value={formData.message} 
+                    onChange={handleInputChange} 
+                    placeholder='(Optional)'
+                  />
                 </div>
 
                 <div className='submit-button'>
