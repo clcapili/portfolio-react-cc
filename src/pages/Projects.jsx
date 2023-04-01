@@ -37,7 +37,7 @@ export default function Projects() {
                 <div className='project-info'>
                   <h2>WeatherAPI</h2>
                   <small>Code / Design / Personal</small>
-                  <p>A web app that displays current weather data for a specified location.</p>
+                  <p>A web app that displays current weather data for a specified location</p>
                 </div>
 
                 {/* outer-right */}
@@ -62,7 +62,7 @@ export default function Projects() {
                 <div className='project-info'>
                   <h2>Movie List</h2>
                   <small>Code / Design / Personal</small>
-                  <p>A web page integrated React state into a movie rating feature, allowing users to conveniently rate and provide feedback on movies.</p>
+                  <p>A web page integrated React state into a movie rating feature, allowing users to conveniently rate and provide feedback on movies</p>
                 </div>
 
                 {/* outer-right */}
@@ -112,7 +112,7 @@ export default function Projects() {
                 <div className='project-info'>
                   <h2>Astrology Icons</h2>
                   <small>Illustration / Design / Personal</small>
-                  <p>Collaboration project where we design six unique icons with minimalist and consistent design style.</p>
+                  <p>Collaboration project where we design six unique icons with minimalist and consistent design style</p>
                 </div>
 
                 {/* outer-right */}
@@ -162,7 +162,7 @@ export default function Projects() {
                 <div className='project-info'>
                   <h2>NXR App</h2>
                   <small>UI/UX / Design / Personal</small>
-                  <p>A user-centered designed mobile app for Jet-ski and Snowmobile rentals.</p>
+                  <p>A user-centered designed mobile app for Jet-ski and Snowmobile rentals</p>
                 </div>
 
                 {/* outer-right */}
@@ -187,7 +187,7 @@ export default function Projects() {
                 <div className='project-info'>
                   <h2>PlusRoom App</h2>
                   <small>UI/UX / Design / Personal</small>
-                  <p>An intuitive mobile app designed for students providing interactive learning experiences.</p>
+                  <p>An intuitive mobile app designed for students providing interactive learning experiences</p>
                 </div>
 
                 {/* outer-right */}
