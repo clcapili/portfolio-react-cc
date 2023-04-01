@@ -212,7 +212,7 @@ export default function Projects() {
                 <div className='project-info'>
                   <h2>Paseo Website</h2>
                   <small>UI/UX / Design / Personal</small>
-                  <p>An intuitive mobile app designed for students providing interactive learning experiences</p>
+                  <p>A dynamic coffee website designed to provide an interactive and engaging experience for coffee enthusiasts</p>
                 </div>
 
                 {/* outer-right */}
