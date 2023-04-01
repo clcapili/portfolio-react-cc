@@ -42,10 +42,10 @@ export default function Contact() {
         message: '',
       });
       console.log('Form submission complete!');
-      // redirect to thank you page after 3 seconds
+      // redirect to thank you page after 2 seconds
       setTimeout(() => {
         window.location.href = '/thank-you';
-      }, 3000);
+      }, 2000);
     } catch (error) {
       console.error(error);
     }
