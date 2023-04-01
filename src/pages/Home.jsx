@@ -76,7 +76,7 @@ export default function Home() {
         <section className='row'>
           <div className='col-md-7'>
             <FadeInAnimation wrapperElement='div' className='featured-project trigger' direction='up'>
-              <ScrollToTopOnLinkClick to='/'>
+              <ScrollToTopOnLinkClick to='/projects/nxr-app'>
                 <img src={nxrImg} className='project-img' alt='Northern Xscape Rentals App UI/UX project' />
 
                 <div className='project-details'>
