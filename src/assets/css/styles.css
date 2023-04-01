@@ -507,6 +507,12 @@ body.projects-layout footer {
   margin-bottom: 8rem;
 }
 
+/* projects archive hover */
+.projects-archive .project-single { opacity: 1; }
+.projects-archive .project-single:hover { opacity: 1; }
+.projects-archive:hover .project-single:not(:hover) { opacity: .2; }
+.projects-archive:hover .project-single:hover { opacity: 1; }
+
 /* projects archive single */
 .project-single {
   padding: 60px 0;
@@ -538,6 +544,12 @@ body.projects-layout footer {
   width: 100%;
   flex: 0 0 100%;
   max-width: 100%;
+  opacity: 0;
+  transition: .3s;
+}
+
+.project-single:hover .arrow-link {
+  opacity: 1;
 }
 
 .project-single .arrow-link img {
